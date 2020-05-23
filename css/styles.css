@@ -1,0 +1,164 @@
+@import '_reset.css';
+
+body {
+    font-family: Arial;
+}
+
+.container-inc {
+    display: grid;
+    grid-template: 50px 100vh 340px / 250px 1fr 450px;
+    height: 100vh;
+    justify-items: strech;
+}
+
+.item-inc {
+    background-color: lightgreen;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+/* Header */
+.header-inc {
+    background-color: lightskyblue;
+    grid-column: 1 / span 3;
+}
+
+/* Header Botón menú */
+.header-inc span {
+    cursor: pointer;
+}
+
+/* Navegacion */
+.nav-inc {
+    background-color: lightseagreen;
+    grid-row: 2 / span 1;
+}
+
+/* Contenido */
+.content-inc {
+    background-color: lightsalmon;
+    grid-column: 2 / span 2;
+    overflow: auto;
+}
+
+.title-inc {
+    background-color: lightseagreen;
+    height: 500px;
+}
+
+.img-inc {
+    background-color: lightcyan;
+    height: 500px;
+}
+
+.carousel-inc {
+    background-color: lightgoldenrodyellow;
+    height: 500px;
+}
+
+.summ-inc {
+    background-color: lightseagreen;
+    height: 500px;
+}
+
+/* Carousel */
+.footer-inc {
+    background-color: lightsalmon;
+    grid-column: 1 / span 3;
+}
+
+/* Glosario */
+.item:nth-of-type(6) {
+    background-color: lightsalmon;
+    grid-column: 2 / span 2;
+}
+
+/* Footer */
+.item:nth-of-type(7) {
+    background-color: lightgreen;
+    grid-column: 1 / span 3;
+    align-self: end;
+}
+
+@media screen and (max-width:850px) {
+    .container-inc {
+        display: grid;
+        grid-template: 50px 100vh 340px / 1fr 1fr 1fr;
+        height: 100vh;
+        justify-items: strech;
+    }
+
+    .item-inc {
+        background-color: lightgreen;
+        padding: 10px;
+        border: 1px solid red;
+    }
+
+    /* Header */
+    .header-inc {
+        background-color: lightskyblue;
+        grid-column: 1 / span 3;
+    }
+
+    /* Navegacion */
+    .nav-inc {
+        background-color: lightseagreen;
+        display: none;
+    }
+
+    /* Toogle Classes */
+    .show-ico {
+        display: block;
+        grid-column: 1 / span 3;
+    }
+
+    .none-ico {
+        display: none;
+    }
+
+
+    /* Contenido */
+    .content-inc {
+        background-color: lightsalmon;
+        grid-column: 1 / span 3;
+    }
+
+    .title-inc {
+        background-color: lightseagreen;
+        height: 500px;
+    }
+
+    .img-inc {
+        background-color: lightcyan;
+        height: 500px;
+    }
+
+    .carousel-inc {
+        background-color: lightgoldenrodyellow;
+        height: 500px;
+    }
+
+    .summ-inc {
+        background-color: lightseagreen;
+        height: 500px;
+    }
+
+    /* Carousel */
+    .footer-inc {
+        background-color: lightsalmon;
+        grid-column: 1 / span 3;
+    }
+
+    /* Glosario */
+    .item:nth-of-type(6) {
+        background-color: lightsalmon;
+        grid-column: 2 / span 2;
+    }
+
+    /* Footer */
+    .item:nth-of-type(7) {
+        background-color: lightgreen;
+        grid-column: 1 / span 3;
+        align-self: end;
+    }
+}
