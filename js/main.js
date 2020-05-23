@@ -3,5 +3,9 @@ function toggle() {
     let contentBox = document.querySelector('#contentBox')
     let footerBox = document.querySelector('#footerBox')
     navBar.classList.toggle('show-ico');
+    contentBox.classList.toggle('none-ico');
+    footerBox.classList.toggle('none-ico');
+
 }
+
 
