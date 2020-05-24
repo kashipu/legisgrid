@@ -11,6 +11,7 @@
     --CHelp1: #0066FF;
     --CHelp2: #FFB71B;
     --CDarkgray: #474747;
+    --Clightgray: #c7c7c7;
     font-size: 16px;
 }
 
@@ -20,7 +21,7 @@ body {
 
 .container-inc {
     display: grid;
-    grid-template: 50px 62px 100vh 340px / 250px 55px 1fr 450px;
+    grid-template: 50px 62px 100vh 340px / 250px 55px 1fr minmax(5px, 1fr);
     height: 100vh;
     justify-items: strech;
 }
@@ -105,7 +106,7 @@ body {
     /* background-color: lightsalmon; */
     grid-column: 2 / span 4;
     overflow: auto;
-    padding: 1.2rem 2rem;
+    padding: 1rem 1.5rem;
 }
 
 /* Subgrid */
@@ -116,8 +117,7 @@ body {
 }
 
 .title-inc {
-    padding: 0;
-    height: 500px;
+    padding-right: 1.5rem;
 }
 
 .encabezado-inc {
@@ -172,10 +172,44 @@ body {
     line-height: 160%;
 }
 
+.checklist-inc {
+    margin: 1.2rem 0rem;
+    border: 1px solid var(--Clightgray);
+    border-radius: 6px;
+}
+
+.checklist-head {
+    padding: 1rem;
+    background-color: var(--CHelp1);
+    color: var(--Cwhite);
+    font-weight: 700;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 1.2rem;
+}
+
+.checklist-content {
+    padding: 1rem 1.5rem;
+}
+
+.checklist-content ul {
+    list-style: disc;
+    padding-left: 2%;
+}
+
+.checklist-content ul li {
+    line-height: 180%;
+}
 
 .img-inc {
-    background-color: lightcyan;
-    height: 500px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-inc img {
+    width: 90%;
 }
 
 .carousel-inc {
@@ -197,7 +231,7 @@ body {
 }
 
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:1110px) {
     .container-inc {
         display: grid;
         grid-template: 50px 55px 100vh 340px / 1fr 1fr 1fr 1fr;
@@ -243,18 +277,18 @@ body {
 
     .subgrid {
         display: grid;
-        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
     }
 
     .title-inc {
-        height: 500px;
         grid-column: 1 / span 3;
     }
 
     .img-inc {
-        background-color: lightcyan;
-        height: 500px;
         grid-column: 1 / span 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .carousel-inc {
