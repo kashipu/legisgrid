@@ -19,6 +19,33 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.btn-inc-fucia {
+    color: var(--Cwhite);
+    background-color: var(--CFucia);
+    padding: 0.1rem 2rem;
+}
+
+#btn-a11y em {
+    display: none;
+}
+
+
 .container-inc {
     display: grid;
     grid-template: 50px 62px 100vh 340px / 250px 55px 1fr minmax(5px, 1fr);
@@ -201,6 +228,7 @@ body {
 }
 
 .img-inc {
+    margin-bottom: 1.2rem;
     width: 100%;
     padding: 0;
     display: flex;
@@ -213,18 +241,122 @@ body {
 }
 
 .carousel-inc {
-    background-color: lightgoldenrodyellow;
-    height: 500px;
     grid-column: 1 / span 2;
 }
+
+.title-carousel-inc {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0rem;
+}
+
+.title-carousel-inc small {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.scroll-content-inc {
+    margin: 1.5rem 0rem;
+    /* border: 1px solid red; */
+}
+
+
+.scroll-card-inc {
+    display: inline-block;
+    border: 1px solid var(--Clightgray);
+    width: 230px;
+}
+
+
+.scroll-card-img {
+    padding: 0rem 1rem;
+}
+
+.scroll-card-img img {
+    padding: 1rem 2.5rem;
+    width: 150px;
+    width: 100%;
+
+}
+
+.scroll-title-inc {
+    border-top: 1px solid var(--Clightgray);
+    padding: 10px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.scroll-color-box-1 {
+    padding: 10px;
+    background-color: var(--CBlue2);
+}
+
+.scroll-color-box-2 {
+    padding: 10px;
+    background-color: var(--CYellow);
+}
+
+.conven-box-inc {
+    margin-top: .5rem;
+    display: flex;
+}
+
+.conven-item {
+    padding: .4rem .6rem;
+    display: flex;
+    align-items: center;
+}
+
+.conven-item:first-child {
+    padding: .4rem 0rem;
+}
+
+.color-conven {
+    background-color: var(--CBlue2);
+    padding: .8rem;
+    border-radius: 50%;
+}
+
+.conven-item p {
+    margin-left: 8px;
+}
+
+
 
 .summ-inc {
-    background-color: lightseagreen;
-    height: 500px;
     grid-column: 1 / span 2;
 }
 
-/* Carousel */
+.title-summ {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.text-summ {
+    line-height: 160%;
+    padding: .5rem 0rem;
+}
+
+.guide-page {}
+
+.text-guide {
+    padding: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.buttons-guide {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0rem;
+}
+
+
+
+
+
+/* Footer */
 .footer-inc {
     background-color: lightsalmon;
     grid-column: 1 / span 4;
@@ -237,6 +369,20 @@ body {
         grid-template: 50px 55px 100vh 340px / 1fr 1fr 1fr 1fr;
         height: 100vh;
         justify-items: strech;
+    }
+
+    .btn-inc-fucia {
+        color: var(--Cwhite);
+        background-color: var(--CFucia);
+        padding: 0.1rem 1rem;
+    }
+
+    #btn-a11y em {
+        display: block;
+    }
+
+    #btn-a11y span {
+        display: none;
     }
 
     .item-inc {
@@ -292,14 +438,10 @@ body {
     }
 
     .carousel-inc {
-        background-color: lightgoldenrodyellow;
-        height: 500px;
         grid-column: 1 / span 3;
     }
 
     .summ-inc {
-        background-color: lightseagreen;
-        height: 500px;
         grid-column: 1 / span 3;
     }
 
