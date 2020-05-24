@@ -1,26 +1,47 @@
 @import '_reset.css';
+@import '_fonts.css';
+
+:root {
+    --CBlack: #000000;
+    --Cwhite: #ffffff;
+    --CBlue: #002E72;
+    --CBlue2: #0066FF;
+    --CFucia: #E7004C;
+    --CYellow: #FFB71B;
+    --CHelp1: #0066FF;
+    --CHelp2: #FFB71B;
+    --CDarkgray: #474747;
+    font-size: 16px;
+}
 
 body {
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-inc {
     display: grid;
-    grid-template: 50px 100vh 340px / 250px 1fr 450px;
+    grid-template: 50px 62px 100vh 340px / 250px 55px 1fr 450px;
     height: 100vh;
     justify-items: strech;
 }
 
 .item-inc {
-    background-color: lightgreen;
-    padding: 10px;
-    border: 1px solid red;
+    padding: 1.2rem;
 }
 
 /* Header */
 .header-inc {
-    background-color: lightskyblue;
-    grid-column: 1 / span 3;
+    background-color: var(--CBlue);
+    color: var(--Cwhite);
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inc h1 {
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 /* Header Botón menú */
@@ -30,21 +51,127 @@ body {
 
 /* Navegacion */
 .nav-inc {
-    background-color: lightseagreen;
-    grid-row: 2 / span 1;
+    background-color: var(--Cwhite);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    grid-row: 2 / span 2;
+    padding: 0;
+}
+
+.nav-inc ul li {
+    border-bottom: .09rem solid var(--CBlue2);
+    padding: .6rem 1rem;
+}
+
+.nav-inc ul li:hover {
+    background-color: var(--CFucia);
+    color: var(--Cwhite);
+    cursor: pointer;
+}
+
+.nav-inc ul li strong {
+    display: block;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.nav-inc ul li small {
+    font-size: .9rem;
+}
+
+.nav-item-inc {
+    border-bottom: .09rem solid var(--CYellow) !important;
+}
+
+/* Texto de ayuda */
+.help-text-inc {
+    grid-column: 2 / span 4;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--CHelp1);
+    color: var(--Cwhite);
+    display: flex;
+    align-items: center;
+}
+
+.yellow {
+    background-color: var(--CHelp2);
+    color: var(--CBlack);
 }
 
 /* Contenido */
 .content-inc {
-    background-color: lightsalmon;
-    grid-column: 2 / span 2;
+    /* background-color: lightsalmon; */
+    grid-column: 2 / span 4;
     overflow: auto;
+    padding: 1.2rem 2rem;
+}
+
+/* Subgrid */
+.subgrid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 450px;
+
 }
 
 .title-inc {
-    background-color: lightseagreen;
+    padding: 0;
     height: 500px;
 }
+
+.encabezado-inc {
+    display: flex;
+    align-items: center;
+}
+
+.ficha {
+    border: 1px solid red;
+    display: inline-block;
+    padding: .2rem 2rem;
+    border-radius: 5px;
+    border: 3px solid var(--CBlue2);
+    color: var(--CBlue2);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.tooltip-inc {
+    display: flex !important;
+    align-items: center;
+    margin-left: .5rem;
+    display: inline-block;
+    color: var(--CBlue2);
+    cursor: pointer;
+}
+
+
+.tooltip-expand {
+    display: none;
+    border-radius: 5px;
+    font-size: .9rem;
+    line-height: 1.4;
+    background-color: var(--CDarkgray);
+    color: var(--Cwhite);
+    margin-left: 1rem;
+    padding: .4rem 2rem;
+}
+
+.tooltip-inc:hover .tooltip-expand {
+    display: block;
+}
+
+.title-name-inc {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0rem;
+}
+
+.text-intern-inc {
+    font-size: 1rem;
+    line-height: 160%;
+}
+
 
 .img-inc {
     background-color: lightcyan;
@@ -54,99 +181,98 @@ body {
 .carousel-inc {
     background-color: lightgoldenrodyellow;
     height: 500px;
+    grid-column: 1 / span 2;
 }
 
 .summ-inc {
     background-color: lightseagreen;
     height: 500px;
+    grid-column: 1 / span 2;
 }
 
 /* Carousel */
 .footer-inc {
     background-color: lightsalmon;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
 }
 
-/* Glosario */
-.item:nth-of-type(6) {
-    background-color: lightsalmon;
-    grid-column: 2 / span 2;
-}
-
-/* Footer */
-.item:nth-of-type(7) {
-    background-color: lightgreen;
-    grid-column: 1 / span 3;
-    align-self: end;
-}
 
 @media screen and (max-width:850px) {
     .container-inc {
         display: grid;
-        grid-template: 50px 100vh 340px / 1fr 1fr 1fr;
+        grid-template: 50px 55px 100vh 340px / 1fr 1fr 1fr 1fr;
         height: 100vh;
         justify-items: strech;
     }
 
     .item-inc {
-        background-color: lightgreen;
         padding: 10px;
-        border: 1px solid red;
     }
 
     /* Header */
     .header-inc {
-        background-color: lightskyblue;
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 4;
     }
 
     /* Navegacion */
     .nav-inc {
-        background-color: lightseagreen;
         display: none;
+    }
+
+    /* Texto de ayuda */
+    .help-text-inc {
+        grid-column: 1 / span 4;
     }
 
     /* Toogle Classes */
     .show-ico {
         display: block;
-        grid-column: 1 / span 3;
+        padding: 0;
+        grid-column: 1 / span 4;
     }
 
     .none-ico {
-        display: none;
+        display: none !important;
     }
 
 
     /* Contenido */
     .content-inc {
-        background-color: lightsalmon;
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 4;
+    }
+
+    .subgrid {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
     }
 
     .title-inc {
-        background-color: lightseagreen;
         height: 500px;
+        grid-column: 1 / span 3;
     }
 
     .img-inc {
         background-color: lightcyan;
         height: 500px;
+        grid-column: 1 / span 3;
     }
 
     .carousel-inc {
         background-color: lightgoldenrodyellow;
         height: 500px;
+        grid-column: 1 / span 3;
     }
 
     .summ-inc {
         background-color: lightseagreen;
         height: 500px;
+        grid-column: 1 / span 3;
     }
 
     /* Carousel */
     .footer-inc {
         background-color: lightsalmon;
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 4;
     }
 
     /* Glosario */

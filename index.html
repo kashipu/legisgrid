@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>CSS-Grid</title>
 </head>
@@ -11,12 +12,85 @@
 <body>
     <div class="container-inc">
         <div class="item-inc header-inc">
-            <button onclick="toggle()">Botón Nav</button>
+            <button onclick="toggle()"><i class="fa fa-bars fa-lg"></i></button>
+            <h1>INCOTERMS<small>&#174;</small> 2020</h1>
+            <button id="btn-a11y" title="Botón Modo Accesibilidad" class="btn btn-second btn-small"><i
+                    class="fa fa-wheelchair" aria-hidden="true"></i> <span>Modo accesibilidad</span></button>
         </div>
-        <div id="navToggle" class="item-inc nav-inc">Navegacion</div>
-        <div id="contentBox" class="item-inc content-inc">
-            <div class="item-inc title-inc">Titulo</div>
-            <div class="item-inc img-inc">Imagen</div>
+        <div id="navToggle" class="item-inc nav-inc">
+            <ul>
+                <li class="nav-item-ico">
+                    <strong>EXW</strong>
+                    <small>Exworks</small>
+                </li>
+                <li class="nav-item-ico">
+                    <strong>FCA</strong>
+                    <small>Free Carrier</small>
+                </li>
+                <li class="nav-item-ico">
+                    <strong>CPT</strong>
+                    <small>Carriage paid to</small>
+                </li>
+                <li class="nav-item-ico">
+                    <strong>CIP</strong>
+                    <small>Carriage and insirance paid to</small>
+                </li>
+                <li class="nav-item-ico">
+                    <strong>DAT</strong>
+                    <small>Delivered at place </small>
+                </li>
+                <li class="nav-item-ico">
+                    <strong>DAP</strong>
+                    <small>Delivered at place</small>
+                </li>
+                <li class="nav-item-ico">
+                    <strong>DDP</strong>
+                    <small>Delivered duty paid</small>
+                </li>
+                <li class="nav-item-inc">
+                    <strong>FAS</strong>
+                    <small>Free alingside ship</small>
+                </li>
+                <li class="nav-item-inc">
+                    <strong>FOB</strong>
+                    <small>Free on Board</small>
+                </li>
+                <li class="nav-item-inc">
+                    <strong>CFR</strong>
+                    <small>Cost and Freight</small>
+                </li>
+                <li class="nav-item-inc">
+                    <strong>CIF</strong>
+                    <small>Cost, insurance and freight</small>
+                </li>
+            </ul>
+        </div>
+        <div id="helpText" class="item-inc help-text-inc">
+            <h2>OTROS MODOS DE TRANSPORTE</h2>
+        </div>
+        <div id="contentBox" class="item-inc content-inc subgrid">
+            <div class="item-inc title-inc">
+                <div class="encabezado-inc">
+                    <div class="ficha">
+                        <h2>EXW</h2>
+                    </div>
+                    <div class="tooltip-inc">
+                        <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
+                        <div class="tooltip-expand">
+                            <span>Aquí puede escuchar <br>este contenido</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="title-name-inc">Exworks (en fábrica)</h2>
+                <p class="text-intern-inc">
+                    Se cumple con la obligación de entrega establecida en el contrato de compra venta internacional una
+                    vez las mercancías hayan sido puestas a disposición del comprador en las instalaciones del vendedor,
+                    por cuanto para efectos de determinar el lugar de la venta internacional esta se configura.
+                </p>
+            </div>
+            <div class="item-inc img-inc">
+                <img src="http://via.placeholder.com/350X350" alt="" srcset="">
+            </div>
             <div class="item-inc carousel-inc">Carousel</div>
             <div class="item-inc summ-inc">Glosario</div>
         </div>
@@ -24,4 +98,5 @@
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
