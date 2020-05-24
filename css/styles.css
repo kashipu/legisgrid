@@ -299,6 +299,7 @@ button {
 .conven-box-inc {
     margin-top: .5rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .conven-item {
@@ -440,6 +441,24 @@ button {
     .carousel-inc {
         grid-column: 1 / span 3;
     }
+
+    .conven-box-inc {
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conven-item {
+        padding: .4rem 0rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .conven-item:first-child {
+        padding: .4rem 0rem;
+    }
+
+
 
     .summ-inc {
         grid-column: 1 / span 3;
