@@ -45,17 +45,18 @@ button {
     display: none;
 }
 
+#btn-a11y {
+    margin-right: 1rem;
+}
+
 
 .container-inc {
     display: grid;
-    grid-template: 50px 62px 100vh 340px / 250px 55px 1fr minmax(5px, 1fr);
+    grid-template: 50px 100vh 340px / 250px  1fr minmax(5px, 1fr);
     height: 100vh;
     justify-items: strech;
 }
 
-.item-inc {
-    padding: 1.2rem;
-}
 
 /* Header */
 .header-inc {
@@ -83,7 +84,7 @@ button {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    grid-row: 2 / span 2;
+    grid-row: 2 / span 1;
     padding: 0;
 }
 
@@ -114,13 +115,14 @@ button {
 
 /* Texto de ayuda */
 .help-text-inc {
-    grid-column: 2 / span 4;
+    grid-column: 1 / span 2;
     text-transform: uppercase;
     font-weight: 700;
     background-color: var(--CHelp1);
     color: var(--Cwhite);
     display: flex;
     align-items: center;
+    padding: 1.45rem;
 }
 
 .yellow {
@@ -131,9 +133,13 @@ button {
 /* Contenido */
 .content-inc {
     /* background-color: lightsalmon; */
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 3;
     overflow: auto;
-    padding: 1rem 1.5rem;
+    /* padding: 1rem 1.5rem; */
+}
+
+.content-inc-wrapper {
+    border: 1px solid red;
 }
 
 /* Subgrid */
@@ -144,7 +150,7 @@ button {
 }
 
 .title-inc {
-    padding-right: 1.5rem;
+    padding: 1rem 1.8rem;
 }
 
 .encabezado-inc {
@@ -177,7 +183,7 @@ button {
     display: none;
     border-radius: 5px;
     font-size: .9rem;
-    line-height: 1.4;
+    line-height: 1.2;
     background-color: var(--CDarkgray);
     color: var(--Cwhite);
     margin-left: 1rem;
@@ -228,26 +234,27 @@ button {
 }
 
 .img-inc {
-    margin-bottom: 1.2rem;
     width: 100%;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .img-inc img {
-    width: 90%;
+    padding: 1rem;
+    width: 100%;
 }
 
 .carousel-inc {
+    padding: .5rem 1.8rem;
     grid-column: 1 / span 2;
 }
 
 .title-carousel-inc {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 1.5rem 0rem;
+    margin: 0rem 0rem;
 }
 
 .title-carousel-inc small {
@@ -257,14 +264,33 @@ button {
 
 .scroll-content-inc {
     margin: 1.5rem 0rem;
-    /* border: 1px solid red; */
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 
 .scroll-card-inc {
     display: inline-block;
+    position: relative;
     border: 1px solid var(--Clightgray);
     width: 230px;
+    margin: -2.3px;
+    white-space: wrap;
+}
+
+.scroll-ribbon {
+    color: var(--Cwhite);
+    border: 1px solid red;
+    background-color: red;
+    padding: 10px 3px;
+    font-size: 20px;
+    right: 10px;
+    top: 0px;
+    position: absolute;
 }
 
 
@@ -284,6 +310,7 @@ button {
     padding: 10px;
     font-weight: 700;
     line-height: 1.6;
+    white-space: normal;
 }
 
 .scroll-color-box-1 {
@@ -297,7 +324,7 @@ button {
 }
 
 .conven-box-inc {
-    margin-top: .5rem;
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -322,9 +349,8 @@ button {
     margin-left: 8px;
 }
 
-
-
 .summ-inc {
+    padding: 1.5rem 1.8rem;
     grid-column: 1 / span 2;
 }
 
@@ -351,9 +377,9 @@ button {
     padding: 1.2rem 0rem;
 }
 
-
-
-
+.none-ico {
+    display: none !important;
+}
 
 /* Footer */
 .footer-inc {
@@ -363,12 +389,6 @@ button {
 
 
 @media screen and (max-width:1110px) {
-    .container-inc {
-        display: grid;
-        grid-template: 50px 55px 100vh 340px / 1fr 1fr 1fr 1fr;
-        height: 100vh;
-        justify-items: strech;
-    }
 
     .btn-inc-fucia {
         color: var(--Cwhite);
@@ -384,26 +404,20 @@ button {
         display: none;
     }
 
-    .item-inc {
-        padding: 10px;
-    }
 
-    /* Header */
     .header-inc {
-        grid-column: 1 / span 4;
+        grid-column: 1 / span 3;
     }
 
-    /* Navegacion */
     .nav-inc {
         display: none;
     }
 
-    /* Texto de ayuda */
     .help-text-inc {
-        grid-column: 1 / span 4;
+        grid-column: 1 / span 3;
     }
 
-    /* Toogle Classes */
+
     .show-ico {
         display: block;
         padding: 0;
@@ -414,15 +428,13 @@ button {
         display: none !important;
     }
 
-
-    /* Contenido */
     .content-inc {
-        grid-column: 1 / span 4;
+        grid-column: 1 / span 3;
     }
 
     .subgrid {
         display: grid;
-        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
     }
 
     .title-inc {
@@ -456,25 +468,20 @@ button {
         padding: .4rem 0rem;
     }
 
-
-
     .summ-inc {
         grid-column: 1 / span 3;
     }
 
-    /* Carousel */
     .footer-inc {
         background-color: lightsalmon;
         grid-column: 1 / span 4;
     }
 
-    /* Glosario */
     .item:nth-of-type(6) {
         background-color: lightsalmon;
         grid-column: 2 / span 2;
     }
 
-    /* Footer */
     .item:nth-of-type(7) {
         background-color: lightgreen;
         grid-column: 1 / span 3;

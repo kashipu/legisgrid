@@ -15,8 +15,8 @@
         <div class="item-inc header-inc">
             <button onclick="toggle()" aria-label="Botón Menú"><i class="fa fa-bars fa-lg"></i></button>
             <h1>INCOTERMS<small>&#174;</small> 2020</h1>
-            <button id="btn-a11y" title="Botón Modo Accesibilidad" class="btn-inc-fucia"><em><i
-                    class="fa fa-wheelchair" aria-hidden="true"></i></em><span>Modo accesibilidad</span></button>
+            <button id="btn-a11y" title="Botón Modo Accesibilidad" class="btn-inc-fucia"><em><i class="fa fa-wheelchair"
+                        aria-hidden="true"></i></em><span>Modo accesibilidad</span></button>
         </div>
         <div id="navToggle" class="item-inc nav-inc">
             <ul>
@@ -66,118 +66,244 @@
                 </li>
             </ul>
         </div>
-        <div id="helpText" class="item-inc help-text-inc">
-            <h2>OTROS MODOS DE TRANSPORTE</h2>
-        </div>
+
         <div id="contentBox" class="item-inc content-inc subgrid">
-            <div class="item-inc title-inc">
-                <div class="encabezado-inc">
-                    <div class="ficha">
-                        <h2>EXW</h2>
+            <div id="helpText" class="help-text-inc">
+                <h2>OTROS MODOS DE TRANSPORTE</h2>
+            </div>
+                <div class="item-inc title-inc">
+                    <div class="encabezado-inc">
+                        <div class="ficha">
+                            <h2>EXW</h2>
+                        </div>
+                        <div class="tooltip-inc">
+                            <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
+                            <div class="tooltip-expand">
+                                <span>Aquí puede escuchar <br>este contenido</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tooltip-inc">
-                        <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
-                        <div class="tooltip-expand">
-                            <span>Aquí puede escuchar <br>este contenido</span>
+                    <h2 class="title-name-inc">Exworks (en fábrica)</h2>
+                    <p class="text-intern-inc">
+                        Se cumple con la obligación de entrega establecida en el contrato de compra venta internacional
+                        una
+                        vez las mercancías hayan sido puestas a disposición del comprador en las instalaciones del
+                        vendedor,
+                        por cuanto para efectos de determinar el lugar de la venta internacional esta se configura.
+                    </p>
+                    <div class="checklist-inc">
+                        <div class="checklist-head">
+                            Checklist
+                        </div>
+                        <div class="checklist-content">
+                            <ul>
+                                <li>El vendedor indica el lugar de entrega de la mercancía.</li>
+                                <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
+                                <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
+                                    necesario.</li>
+                                <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
+                                    cargada.
+                                </li>
+                                <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
+                                    dispone
+                                    de los recursos necesarios para la correcta manipulación de la carga.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <h2 class="title-name-inc">Exworks (en fábrica)</h2>
-                <p class="text-intern-inc">
-                    Se cumple con la obligación de entrega establecida en el contrato de compra venta internacional una
-                    vez las mercancías hayan sido puestas a disposición del comprador en las instalaciones del vendedor,
-                    por cuanto para efectos de determinar el lugar de la venta internacional esta se configura.
-                </p>
-                <div class="checklist-inc">
-                    <div class="checklist-head">
-                        Checklist
-                    </div>
-                    <div class="checklist-content">
-                        <ul>
-                            <li>El vendedor indica el lugar de entrega de la mercancía.</li>
-                            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-                            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                                necesario.</li>
-                            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no cargada.
-                            </li>
-                            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor dispone
-                                de los recursos necesarios para la correcta manipulación de la carga.</li>
-                        </ul>
-                    </div>
+                <div class="item-inc img-inc">
+                    <img src="images/exw.gif" alt="" srcset="">
                 </div>
-            </div>
-            <div class="item-inc img-inc">
-                <img src="images/exw.gif" alt="" srcset="">
-            </div>
-            <div class="item-inc carousel-inc">
-                <h2 class="title-carousel-inc">Proceso <small>- Deslize a la izquierda</small></h2>
-                <ul class="scroll-content-inc">
-                    <li class="scroll-card-inc">
-                        <!-- <div class="scroll-ribbon">
-                            <i class="fa fa-check-circle-o fa-2x" aria-hidden="true"></i>
-                        </div> -->
-                        <div class="scroll-card-img">
-                            <img src="images/icons/1.svg" alt="">
+                <div class="item-inc carousel-inc">
+                    <h2 class="title-carousel-inc">Proceso <small>- Deslize a la izquierda</small></h2>
+                    <ul class="scroll-content-inc">
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/1.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Embalaje, verificación y control asdasdas</h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/2.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Cargue en el camión <br><br></h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/3.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Transporte local de origen<br><br></h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/4.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Aduana de exportación <br><br></h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/5.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Operacion Portuaria<br><br></h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/multi1.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Transporte Principal<br><br></h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/5.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Operaciones portuarias, Descarga en destino.</h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/4.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Aduana de importación<br><br></h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/3.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Transporte de destino<br><br></h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/12.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Descargue de mercancía<br><br></h3>
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+
+                    </ul>
+                    <h2 class="title-carousel-inc">Convenciones</h2>
+                    <div class="conven-box-inc">
+                        <div class="conven-item">
+                            <div class="color-conven"></div>
+                            <p>Costo del vendedor</p>
                         </div>
-                        <div class="scroll-title-inc">
-                            <h3>Embalaje, verificación y control</h3>
+                        <div class="conven-item">
+                            <div class="color-conven"></div>
+                            <p>Riesgo del vendedor</p>
                         </div>
-                        <div class="scroll-color-box-1"></div>
-                        <div class="scroll-color-box-2"></div>
-                    </li>
-                </ul>
-                <h2 class="title-carousel-inc">Convenciones</h2>
-                <div class="conven-box-inc">
-                    <div class="conven-item">
-                        <div class="color-conven"></div>
-                        <p>Costo del vendedor</p>
-                    </div>
-                    <div class="conven-item">
-                        <div class="color-conven"></div>
-                        <p>Riesgo del vendedor</p>
-                    </div>
-                    <div class="conven-item">
-                        <div class="color-conven"></div>
-                        <p>Costo del comprador</p>
-                    </div>
-                    <div class="conven-item">
-                        <div class="color-conven"></div>
-                        <p>Riesgo del comprador</p>
-                    </div>
-                    <div class="conven-item">
-                        <div class="color-conven"></div>
-                        <p>Depende el lugar de entrega</p>
+                        <div class="conven-item">
+                            <div class="color-conven"></div>
+                            <p>Costo del comprador</p>
+                        </div>
+                        <div class="conven-item">
+                            <div class="color-conven"></div>
+                            <p>Riesgo del comprador</p>
+                        </div>
+                        <div class="conven-item">
+                            <div class="color-conven"></div>
+                            <p>Depende el lugar de entrega</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item-inc summ-inc">
-                <h2 class="title-summ">Glosario</h2>
-                <p class="text-summ">A1. Obligaciones generales - El vendedor debe suministrar la mercancía y la factura
-                    comercial de
-                    conformidad con el contrato de compraventa y cualquier otra prueba de conformidad que pueda exigir
-                    el contrato. Cualquier documento que tenga que proporcionar el vendedor puede ser en papel o en
-                    forma electrónica como se haya acordado o, si no existe acuerdo, como sea habitual.</p>
+                <div class="item-inc summ-inc">
+                    <h2 class="title-summ">Glosario</h2>
+                    <p class="text-summ">A1. Obligaciones generales - El vendedor debe suministrar la mercancía y la
+                        factura
+                        comercial de
+                        conformidad con el contrato de compraventa y cualquier otra prueba de conformidad que pueda
+                        exigir
+                        el contrato. Cualquier documento que tenga que proporcionar el vendedor puede ser en papel o en
+                        forma electrónica como se haya acordado o, si no existe acuerdo, como sea habitual.</p>
 
-                <p class="text-summ">A2. Entrega - El vendedor debe entregar la mercancía poniéndola a disposición del
-                    comprador en el
-                    punto acordado, si lo hay, en el lugar de entrega designado, no cargada en ningún vehículo de
-                    recogida. Si no se ha acordado un punto específico en el lugar de entrega designado, y si hay varios
-                    puntos disponibles, el vendedor puede seleccionar el punto que mejor le convenga. El vendedor debe
-                    entregar la mercancía en la fecha acordada o dentro del plazo acordado.</p>
+                    <p class="text-summ">A2. Entrega - El vendedor debe entregar la mercancía poniéndola a disposición
+                        del
+                        comprador en el
+                        punto acordado, si lo hay, en el lugar de entrega designado, no cargada en ningún vehículo de
+                        recogida. Si no se ha acordado un punto específico en el lugar de entrega designado, y si hay
+                        varios
+                        puntos disponibles, el vendedor puede seleccionar el punto que mejor le convenga. El vendedor
+                        debe
+                        entregar la mercancía en la fecha acordada o dentro del plazo acordado.</p>
 
-                <div class="guide-page">
-                    <div class="text-guide">
-                        Página <strong>1 / 12</strong>
+                    <div class="guide-page">
+                        <div class="text-guide">
+                            Página <strong>1 / 12</strong>
+                        </div>
+                        <div class="buttons-guide">
+                            <button>Anterior</button>
+                            <button>Siguiente</button>
+                        </div>
+
                     </div>
-                    <div class="buttons-guide">
-                        <button>Anterior</button>
-                        <button>Siguiente</button>
-                    </div>
-
                 </div>
-
-
-            </div>
         </div>
         <div id="footerBox" class="item-inc footer-inc">Footer</div>
     </div>
