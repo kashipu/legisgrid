@@ -12,6 +12,11 @@
     --CHelp2: #FFB71B;
     --CDarkgray: #474747;
     --Clightgray: #c7c7c7;
+    --Cnv1: var(--CBlue2);
+    --Cnv2: #5297FF;
+    --Cnv3: #FF8A00;
+    --Cnv4: #FEC685;
+    --Cnv5: #8321FF;
     font-size: 16px;
 }
 
@@ -38,6 +43,18 @@ button {
 .btn-inc-fucia {
     color: var(--Cwhite);
     background-color: var(--CFucia);
+    padding: 0.1rem 2rem;
+}
+
+.btn-inc-blue {
+    color: var(--Cwhite);
+    background-color: var(--CBlue);
+    padding: 0.1rem 2rem;
+}
+
+.btn-inc-blue2 {
+    color: var(--Cwhite);
+    background-color: var(--CBlue2);
     padding: 0.1rem 2rem;
 }
 
@@ -88,10 +105,21 @@ button {
     padding: 0;
 }
 
+
+.nav-item-button {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+
 .nav-inc ul li {
     border-bottom: .09rem solid var(--CBlue2);
-    padding: .6rem 1rem;
+    padding: 0.3rem 1rem;
 }
+
+
 
 .nav-inc ul li:hover {
     background-color: var(--CFucia);
@@ -112,6 +140,7 @@ button {
 .nav-item-inc {
     border-bottom: .09rem solid var(--CYellow) !important;
 }
+
 
 /* Texto de ayuda */
 .help-text-inc {
@@ -159,7 +188,6 @@ button {
 }
 
 .ficha {
-    border: 1px solid red;
     display: inline-block;
     padding: .2rem 2rem;
     border-radius: 5px;
@@ -167,6 +195,11 @@ button {
     color: var(--CBlue2);
     font-size: 2.2rem;
     font-weight: 700;
+}
+
+.ficha-yellow {
+    border: 3px solid var(--CYellow);
+    color: var(--CYellow);
 }
 
 .tooltip-inc {
@@ -197,6 +230,7 @@ button {
 .title-name-inc {
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 1.6;
     margin: 1.5rem 0rem;
 }
 
@@ -282,6 +316,15 @@ button {
     white-space: wrap;
 }
 
+/* .scroll-card-inc:nth-of-type(1) {
+    background-color: aqua;
+}
+.scroll-card-inc:nth-of-type(1) .scroll-color-box-2 {
+    background-color: aqua;
+} */
+
+
+
 .scroll-ribbon {
     color: var(--Cwhite);
     border: 1px solid red;
@@ -315,7 +358,7 @@ button {
 
 .scroll-color-box-1 {
     padding: 10px;
-    background-color: var(--CBlue2);
+    background-color: brown;
 }
 
 .scroll-color-box-2 {
@@ -335,14 +378,26 @@ button {
     align-items: center;
 }
 
-.conven-item:first-child {
-    padding: .4rem 0rem;
-}
-
 .color-conven {
     background-color: var(--CBlue2);
     padding: .8rem;
     border-radius: 50%;
+}
+
+.colorConven1 {
+    background-color: var(--Cnv1);
+}
+.colorConven2 {
+    background-color: var(--Cnv2);
+}
+.colorConven3 {
+    background-color: var(--Cnv3);
+}
+.colorConven4 {
+    background-color: var(--Cnv4);
+}
+.colorConven5 {
+    background-color: var(--Cnv5);
 }
 
 .conven-item p {
@@ -439,6 +494,7 @@ button {
 
     .title-inc {
         grid-column: 1 / span 3;
+        padding: 1rem 1.2rem;
     }
 
     .img-inc {
