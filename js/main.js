@@ -18,8 +18,21 @@ function colores(i, colorBox1, colorBox2, ribbon) {
 }
 
 function audioPlay() {
-    let player = document.querySelector('#audioTag')
+    let player = document.querySelector('#audioTag');
+    let iconplay = document.querySelector('#iconplay')
+    let iconpause = document.querySelector('#iconpause')
     player.play()
+    iconplay.classList.add('none-ico');
+    iconpause.classList.remove('none-ico')
+}
+
+function audioPause() {
+    let player = document.querySelector('#audioTag');
+    let iconplay = document.querySelector('#iconplay');
+    let iconpause = document.querySelector('#iconpause');
+    player.pause()
+    iconplay.classList.remove('none-ico');
+    iconpause.classList.add('none-ico');
 }
 
 function toggle() {

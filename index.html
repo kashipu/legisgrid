@@ -87,8 +87,9 @@
                     <div id="ficha" class="ficha">
                         <h2 id="inc-title">EXW</h2>
                     </div>
-                    <div id="iconBox" class="tooltip-inc" onclick="audioPlay()">
-                        <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
+                    <div id="iconBox" class="tooltip-inc">
+                        <i id="iconplay" class="fa fa-volume-up fa-2x" onclick="audioPlay()" aria-hidden="true"></i>
+                        <i id="iconpause" class="fa fa-pause-circle-o fa-2x none-ico" onclick="audioPause()" aria-hidden="true"></i>
                         <audio id="audioTag" src="audios/pruebainc.mp3">
                             Your browser does not support the <code>audio</code> element.
                         </audio>
