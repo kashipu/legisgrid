@@ -259,6 +259,19 @@ button {
     padding: 0rem .5rem;
 }
 
+.checklist-content-box {
+    padding: 1rem 1.5rem;
+}
+
+.checklist-content-box ul {
+    list-style: disc;
+    padding-left: 2%;
+}
+
+.checklist-content-box ul li {
+    line-height: 180%;
+}
+
 .checklist-content ul {
     list-style: disc;
     padding-left: 2%;
@@ -586,6 +599,16 @@ footer {
         grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
     }
 
+    .scroll-content-inc {
+        margin: 1rem 0rem;
+        padding: 1rem .2rem;
+        box-sizing: border-box;
+        width: 100%;
+        overflow: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
     .title-inc {
         grid-column: 1 / span 3;
         padding: 1rem 1.2rem;
@@ -596,6 +619,10 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .checklist-content-box {
+        padding: 1rem 2rem;
     }
 
     .carousel-inc {
