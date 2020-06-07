@@ -24,7 +24,14 @@ function audioPlay() {
     player.play()
     iconplay.classList.add('none-ico');
     iconpause.classList.remove('none-ico')
-}
+
+    //Media data test
+    navigator.mediaSession.metadata = new MediaMetadata({
+        title: 'Never Gonna Give You Up',
+        artist: 'Rick Astley',
+        album: 'Whenever You Need Somebody',
+      });
+    }
 
 function audioPause() {
     let player = document.querySelector('#audioTag');
