@@ -22,6 +22,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 button {
@@ -255,7 +256,7 @@ button {
 }
 
 .checklist-content {
-    padding: 1rem 1.5rem;
+    padding: 0rem .5rem;
 }
 
 .checklist-content ul {
