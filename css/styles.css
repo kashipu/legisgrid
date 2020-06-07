@@ -306,6 +306,25 @@ button {
     white-space: nowrap;
 }
 
+.scroll-container {
+    display: flex;
+}
+
+.flecha {
+    border-left: 1px dotted var(--Clightgray);
+    height: 28vh;
+    padding-left: 1rem;
+    display: inline-block;
+    align-self: center;
+}
+
+.icono-flecha {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: var(--CBlue);
+}
+
 
 .scroll-card-inc {
     display: inline-block;
@@ -315,15 +334,6 @@ button {
     margin: -2.3px;
     white-space: wrap;
 }
-
-/* .scroll-card-inc:nth-of-type(1) {
-    background-color: aqua;
-}
-.scroll-card-inc:nth-of-type(1) .scroll-color-box-2 {
-    background-color: aqua;
-} */
-
-
 
 .scroll-ribbon {
     color: var(--Cwhite);
@@ -589,6 +599,14 @@ footer {
 
     .carousel-inc {
         grid-column: 1 / span 3;
+    }
+
+    .flecha {
+        border-left: 1px solid var(--Clightgray);
+        height: 37vh;
+        padding-left: 1rem;
+        display: inline-block;
+        align-self: center;
     }
 
     .conven-box-inc {
