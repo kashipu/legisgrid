@@ -30,6 +30,7 @@ const summarAll = `<li>Vendedor: Persona encargada de la venta o comercializaci�
 
 const info = [{
         sigla: "EXW",
+        audio: "audios/pruebainc.mp3",
         subtitulo: "Exworks en fábrica",
         descripcion: "El vendedor únicamente es responsable de entregar la mercancía en el lugar designadas por el mismo bien sea (fábrica, almacén, taller etc.) y  el comprador asume todos los riesgos y los costos desde el momento que recibe la mercancía hasta su destino.",
         imagen: "images/exw.gif",
