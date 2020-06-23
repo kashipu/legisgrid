@@ -23,15 +23,7 @@ function audioPlay() {
     let iconpause = document.querySelector('#iconpause')
     player.play()
     iconplay.classList.add('none-ico');
-    iconpause.classList.remove('none-ico')
-
-    //Media data test
-    navigator.mediaSession.metadata = new MediaMetadata({
-        title: 'Never Gonna Give You Up',
-        artist: 'Rick Astley',
-        album: 'Whenever You Need Somebody',
-      });
-    }
+    iconpause.classList.remove('none-ico')}
 
 function audioPause() {
     let player = document.querySelector('#audioTag');
@@ -113,6 +105,22 @@ function insertInfo(i) {
         fca()
     }else if (i == 2) {
         cpt()
+    }else if (i == 3) {
+        cip()
+    }else if (i == 4) {
+        dap()
+    }else if (i == 5) {
+        dpu()
+    }else if (i == 6) {
+        ddp()
+    }else if (i == 7) {
+        fas()
+    }else if (i == 8) {
+        fob()
+    }else if (i == 9) {
+        cfr()
+    }else if (i == 10) {
+        cif()
     }
 
     //Mostrar eventos frente al usar los botones del nav

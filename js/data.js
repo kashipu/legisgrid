@@ -35,28 +35,25 @@ const info = [{
         descripcion: "El vendedor únicamente es responsable de entregar la mercancía en el lugar designadas por el mismo bien sea (fábrica, almacén, taller etc.) y  el comprador asume todos los riesgos y los costos desde el momento que recibe la mercancía hasta su destino.",
         imagen: "images/exw.gif",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
+        <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
+        <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
+        <li>El comprador debe asumir los costos al momento de entrega de la mercancía no cargada.</li>
+        <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor dispone de los recursos necesarios para la correcta manipulación de la carga.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
         glosario: summarAll
     },
     {
         sigla: "FCA",
+        audio: "",
         subtitulo: "Free Carrier / Franco Porteador",
         descripcion: "Se debe acordar o concretar un punto de entrega de la mercancía al transportista (transitario, naviera, aerolínea, etc.)  elegido por el comprador, el vendedor debe hacer la entrega de la mercancía una vez superada la aduana de exportación, asumiendo los gastos generado por manipulación, transporte, descargue y costos aduaneros desde el almacén o fábrica hasta el lugar o punto fijado para ello.",
         imagen: "images/exw.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
+        checklisk: `<li>Cuenta con dos condiciones de entrega</li>
+        <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
+        <li>El vendedor es responsable de perdida o daños hasta que se haya entregado al porteador o persona designada por el comprador.</li>
+        <li>El comprador debe contratar el transporte desde el punto designado de entrega.</li>
+        <li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
         glosario: summarAll,
     },
     {
@@ -64,14 +61,11 @@ const info = [{
         subtitulo: "Carriage Paid To / Transporte pagado hasta",
         descripcion: "El vendedor hace la entrega de la mercancía y asume el costo del transporte hasta un puerto o destino acordado, incluyendo todos los gastos, trámites de exportación, despacho aduanero y transporte internacional. No obstante la responsabilidad y el riesgo la asume el comprador desde que inicia el transporte internacional",
         imagen: "images/exw.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
+        checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad o operaciones de recuento.</li>
+        <li>El comprador asume la responsabilidad y riesgo desde que inicia el transporte internacional.</li>
+        <li>El vendedor debe asumir los costos de despacho de aduana.</li>
+        <li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
         glosario: summarAll
     },
     {
@@ -79,14 +73,11 @@ const info = [{
         subtitulo: "Carriage and Insurance Paid to / Transporte y Seguro Pagados hasta",
         descripcion: "Es el complemento del Incoterm®  CPT, se incluye el valor del seguro que es asumido por el vendedor. El vendedor debe asumir todos los gastos relacionados con manipulación, transporte local, trámites de exportación, despacho aduanero, transporte internacional y seguro. No obstante la responsabilidad del comprador inicia al finalizar el transporte internacional.",
         imagen: "images/exw.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
+        checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
+        <li>El vendedor debe asumir el valor del seguro.</li>
+        <li>La responsabilidad la asume el comprador al finalizar el transporte internacional.</li>
+        <li>El vendedor debe asumir los gastos si se general al realizar las operaciones de verificación de calidad y conteo de la mercancía.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
         glosario: summarAll
     },
     {
@@ -94,14 +85,11 @@ const info = [{
         subtitulo: "Delivered At Place / Entregada en Lugar Convenido",
         descripcion: "El vendedor entrega la mercancía y asume los costos generados en origen tales como (transporte, cargue, aduana exportación, transporte internacional, seguro y demás movimientos ocasionados para lograr el despacho de la mercancía) y costos en destino como ( gastos por manipulación y movimiento de la mercancía y transporte en destino hasta entregar la mercancía en un punto acordado).  el comprador debe asumir los costos y gastos en aduana de importación.",
         imagen: "images/exw.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
+        checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía, excluyendo los gastos en aduana de importación.</li>
+        <li>El comprador debe asumir los gastos relacionados con la aduana de importación.</li>
+        <li>El vendedor le hace la entrega de la mercancía al comprador en el punto acordado, poniéndola a disposición en los medios de transporte de llegada.</li>
+        <li>Se recomienda acordar el seguro para esa operación.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
         glosario: summarAll
     },
     {
@@ -109,14 +97,12 @@ const info = [{
         subtitulo: "Delivered at place unloaded / Mercancía entregada y descargada",
         descripcion: "El vendedor entrega la mercancía hasta el sitio en destino, cubriendo todos los gastos generados en transporte local, internacional, seguro, aduana de exportación y manipulación de carga en origen y destino, transporte en destino. el comprador debe cubrir los gastos generados en aduana de importación y pago de impuestos.",
         imagen: "images/exw.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
+        checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía incluyendo el descargue, excluyendo los gastos en aduana de importación.</li>
+        <li>El vendedor asume todos los riesgos hasta hacer la entrega de la mercancía en el punto acordado y descargada.</li>
+        <li>El comprador asume todos los gastos de importación.</li>
+        <li>El comprador debe informar la recepción de la mercancía al vendedor.</li>
+        <li>Se recomienda acordar el seguro para esa operación.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
         glosario: summarAll
     },
     {
@@ -124,14 +110,10 @@ const info = [{
         subtitulo: "Delivered Duty Paid / Entrega con Derechos Pagados",
         descripcion: "El DDP establece que el vendedor cubre todos los gastos ocasionados tanto en origen como en destino, excluyendo el descargue en destino, el vendedor adquiere el riesgo una vez la mercancía sea entregada o llegue al sitio acordado en destino.",
         imagen: "images/exw.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
+        checklisk: `<li>El vendedor asume todos los gastos generados en origen como en destino, sin incluir el descargue de la mercancía en el punto acordado.</li>
+        <li>Se recomienda acordar el seguro para esa operación.</li>
+        <li>El comprador no tiene ninguna responsabilidad con el transporte.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
         glosario: summarAll
     },
     {
@@ -229,11 +211,131 @@ function fca(){
 function cpt(){
     colores(1, conven1, conven2);
     colores(2, conven1, conven2);
-    colores(3, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2);
     colores(4, conven1, conven2, ribbonNone);
     colores(5, conven1, conven2, ribbonNone);
     colores(6, conven1, conven4, ribbonNone);
     colores(7, conven3, conven4, ribbonNone);
+    colores(8, conven3, conven4, ribbonNone);
+    colores(9, conven3, conven4, ribbonNone);
+    colores(10, conven3, conven4, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+}
+
+function cip(){
+    colores(1, conven1, conven2);
+    colores(2, conven1, conven2);
+    colores(3, conven1, conven2);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven4, ribbonNone);
+    colores(7, conven1, conven4, ribbonNone);
+    colores(8, conven3, conven4, ribbonNone);
+    colores(9, conven3, conven4, ribbonNone);
+    colores(10, conven3, conven4, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+}
+
+function dap(){
+    colores(1, conven1, conven2);
+    colores(2, conven1, conven2);
+    colores(3, conven1, conven2);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven2, ribbonNone);
+    colores(8, conven5, conven5, ribbonNone);
+    colores(9, conven3, conven4, ribbonNone);
+    colores(10, conven5, conven5, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+}
+
+function dpu(){
+    colores(1, conven1, conven2);
+    colores(2, conven1, conven2);
+    colores(3, conven1, conven2);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven2, ribbonNone);
+    colores(8, conven1, conven2, ribbonNone);
+    colores(9, conven3, conven4, ribbonNone);
+    colores(10, conven5, conven5, ribbonNone);
+    colores(11, conven1, conven2, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+}
+
+function ddp(){
+    colores(1, conven1, conven2);
+    colores(2, conven1, conven2);
+    colores(3, conven1, conven2);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven2, ribbonNone);
+    colores(8, conven1, conven2, ribbonNone);
+    colores(9, conven1, conven2, ribbonNone);
+    colores(10, conven1, conven2, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+}
+
+function fas(){
+    colores(1, conven1, conven2);
+    colores(2, conven1, conven2);
+    colores(3, conven1, conven2);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven3, conven4, ribbonNone);
+    colores(6, conven3, conven4, ribbonNone);
+    colores(7, conven3, conven4, ribbonNone);
+    colores(8, conven3, conven4, ribbonNone);
+    colores(9, conven3, conven4, ribbonNone);
+    colores(10, conven3, conven4, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+}
+
+function fob(){
+    colores(1, conven1, conven2);
+    colores(2, conven1, conven2);
+    colores(3, conven1, conven2);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven3, conven4, ribbonNone);
+    colores(7, conven3, conven4, ribbonNone);
+    colores(8, conven3, conven4, ribbonNone);
+    colores(9, conven3, conven4, ribbonNone);
+    colores(10, conven3, conven4, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+}
+
+function cfr(){
+    colores(1, conven1, conven2);
+    colores(2, conven1, conven2);
+    colores(3, conven1, conven2);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven4, ribbonNone);
+    colores(7, conven3, conven4, ribbonNone);
+    colores(8, conven3, conven4, ribbonNone);
+    colores(9, conven3, conven4, ribbonNone);
+    colores(10, conven3, conven4, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+}
+
+function cif(){
+    colores(1, conven1, conven2);
+    colores(2, conven1, conven2);
+    colores(3, conven1, conven2);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven4, ribbonNone);
+    colores(7, conven1, conven4, ribbonNone);
     colores(8, conven3, conven4, ribbonNone);
     colores(9, conven3, conven4, ribbonNone);
     colores(10, conven3, conven4, ribbonNone);
