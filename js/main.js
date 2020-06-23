@@ -84,6 +84,10 @@ function insertInfo(i) {
         <button onclick="insertInfo(${i - 1})" class="btn-inc-blue">Anterior</button>
         <button onclick="insertInfo(${i + 1})" class="btn-inc-blue2">Siguiente</button>
         `
+
+    let player = document.querySelector('#audioTag');
+    player.setAttribute("src", info[i].audio)
+
     // color help text
     if ((i == 7) || (i == 8) || (i == 9) || (i == 10)) {
         let helpTextBox = document.querySelector('#helpText')
