@@ -41,6 +41,10 @@ button {
     border-radius: 0.25rem;
 }
 
+.mb-2-inc {
+    margin-bottom: 2rem;
+}
+
 .btn-inc-fucia {
     color: var(--Cwhite);
     background-color: var(--CFucia);
@@ -365,6 +369,16 @@ button {
     padding: 0rem 1rem;
 }
 
+.scroll-card-img-set {
+    padding: 0rem 0rem;
+}
+
+.scroll-card-img-set img {
+    padding: .8rem 1rem;
+    width: 150px;
+    width: 100%;
+}
+
 .scroll-card-img img {
     padding: 1rem 2.5rem;
     width: 150px;
@@ -378,6 +392,19 @@ button {
     font-weight: 700;
     line-height: 1.6;
     white-space: normal;
+}
+
+.scroll-title-inc-set {
+    border-top: 1px solid var(--Clightgray);
+    font-size: .93rem;
+    padding: 10px;
+    font-weight: 700;
+    line-height: 1.6;
+    white-space: normal;
+}
+
+.scroll-title-inc-set h3 {
+    padding-top: 4px;
 }
 
 .scroll-color-box-1 {
