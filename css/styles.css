@@ -41,6 +41,10 @@ button {
     border-radius: 0.25rem;
 }
 
+.titleh1 {
+    text-transform: uppercase;
+}
+
 .mb-2-inc {
     margin-bottom: 2rem;
 }
@@ -498,7 +502,7 @@ button {
 }
 
 footer {
-    background-color: var(--CBlue2);
+    background-color: #293AE8;
     color: white;
     display: grid;
     grid-template: 1fr 100px / repeat(4, 1fr) .4fr;
@@ -537,7 +541,7 @@ footer {
 
 .f-colum ul li {
     list-style: none;
-    line-height: 1.3;
+    line-height: 1.8;
 }
 
 .f-colum strong {
@@ -702,7 +706,7 @@ footer {
 
 
     footer {
-        background-color: var(--CBlue2);
+        background-color: #293AE8;
         color: white;
         display: grid;
         grid-template-columns: 1fr;
@@ -732,7 +736,7 @@ footer {
         padding-top: 3.5rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .f-colum .text-f-inc {
@@ -745,7 +749,7 @@ footer {
 
     .f-colum ul li {
         list-style: none;
-        line-height: 1.3;
+        line-height: 1.8;
     }
 
     .f-colum strong {

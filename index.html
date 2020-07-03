@@ -13,8 +13,8 @@
 <body>
     <div class="container-inc">
         <div class="item-inc header-inc">
-            <button onclick="toggle()" aria-label="Botón Menú"><i class="fa fa-bars fa-lg"></i></button>
-            <h1>INCOTERMS<small>&#174;</small> 2020</h1>
+            <button id="btnmenu" onclick="toggle()" aria-label="Botón Menú" aria-expanded="false"><i class="fa fa-bars fa-lg"></i></button>
+            <h1 class="titleh1">Incoterms<small>&#174;</small> 2020</h1>
             <button id="btn-a11y" title="Botón Modo Accesibilidad" class="btn-inc-fucia"><em><i class="fa fa-wheelchair"
                         aria-hidden="true"></i></em><span>Modo accesibilidad</span></button>
         </div>
@@ -88,8 +88,8 @@
                         <h2 id="inc-title">EXW</h2>
                     </div>
                     <div id="iconBox" class="tooltip-inc">
-                        <i id="iconplay" class="fa fa-volume-up fa-2x" onclick="audioPlay()" aria-hidden="true"></i>
-                        <i id="iconpause" class="fa fa-pause-circle-o fa-2x none-ico" onclick="audioPause()"
+                        <i id="iconplay" class="fa fa-volume-up fa-2x" onclick="audioPlay()" aria-label="Botón Reproducir Audio"></i>
+                        <i id="iconpause" class="fa fa-pause-circle-o fa-2x none-ico" aria-label="Botón Pausar Audio" onclick="audioPause()"
                             aria-hidden="true"></i>
                         <audio id="audioTag">
                             Your browser does not support the <code>audio</code> element.

@@ -42,9 +42,15 @@ function toggle() {
         let contentBox = document.querySelector('#contentBox')
         let footerBox = document.querySelector('#footerBox')
         let helpTextBox = document.querySelector('#helpText')
+        let btnmenu = document.querySelector('#btnmenu')
         contentBox.classList.toggle('none-ico');
         footerBox.classList.toggle('none-ico');
         helpTextBox.classList.toggle('none-ico');
+    }
+    if(navBar.classList.contains("show-ico")){
+        btnmenu.setAttribute ("aria-expanded", "true")
+    } else {
+        btnmenu.setAttribute ("aria-expanded", "false")
     }
 }
 function insertInfo(i) {
