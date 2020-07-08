@@ -33,7 +33,7 @@ const info = [{
         audio: "audios/pruebainc.mp3",
         subtitulo: "Exworks en fábrica",
         descripcion: "El vendedor únicamente es responsable de entregar la mercancía en el lugar designadas por el mismo bien sea (fábrica, almacén, taller etc.) y  el comprador asume todos los riesgos y los costos desde el momento que recibe la mercancía hasta su destino.",
-        imagen: "images/exw.gif",
+        imagen: "images/exw.mp4",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
         <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
         <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
@@ -150,7 +150,7 @@ const info = [{
         sigla: "CFR",
         subtitulo: "Cost and Freight / Coste y Flete",
         descripcion: "Incoterms utilizado únicamente para transporte por marítimo o fluvial, en este caso el vendedor asume los costos generados  hasta entregar la mercancía en puerto de destino tales como (transporte local en origen, aduana de exportación, manipulación de carga en puerto, y flete internacional), de este modo transfiere el riesgo al comprador una vez esté la mercancía en puerto de destino, de este modo el comprador asume los gastos ocasionados como (seguro, manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
-        imagen: "images/exw.gif",
+        imagen: "images/cfr.mp4",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
             <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
             <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
@@ -196,8 +196,8 @@ function exw(){
 function fca(){
     colores(1, conven1, conven2);
     colores(2, conven1, conven2);
-    colores(3, conven5, conven5, ribbonNone);
-    colores(4, conven1, conven2, ribbonNone);
+    colores(3, conven5, conven5);
+    colores(4, conven1, conven2);
     colores(5, conven3, conven4, ribbonNone);
     colores(6, conven3, conven4, ribbonNone);
     colores(7, conven3, conven4, ribbonNone);
@@ -212,9 +212,9 @@ function cpt(){
     colores(1, conven1, conven2);
     colores(2, conven1, conven2);
     colores(3, conven1, conven2);
-    colores(4, conven1, conven2, ribbonNone);
-    colores(5, conven1, conven2, ribbonNone);
-    colores(6, conven1, conven4, ribbonNone);
+    colores(4, conven1, conven2);
+    colores(5, conven1, conven2);
+    colores(6, conven1, conven4);
     colores(7, conven3, conven4, ribbonNone);
     colores(8, conven3, conven4, ribbonNone);
     colores(9, conven3, conven4, ribbonNone);
@@ -228,9 +228,9 @@ function cip(){
     colores(2, conven1, conven2);
     colores(3, conven1, conven2);
     colores(4, conven1, conven2);
-    colores(5, conven1, conven2, ribbonNone);
-    colores(6, conven1, conven4, ribbonNone);
-    colores(7, conven1, conven4, ribbonNone);
+    colores(5, conven1, conven2);
+    colores(6, conven1, conven4);
+    colores(7, conven1, conven4);
     colores(8, conven3, conven4, ribbonNone);
     colores(9, conven3, conven4, ribbonNone);
     colores(10, conven3, conven4, ribbonNone);
@@ -244,13 +244,14 @@ function dap(){
     colores(3, conven1, conven2);
     colores(4, conven1, conven2);
     colores(5, conven1, conven2);
-    colores(6, conven1, conven2, ribbonNone);
-    colores(7, conven1, conven2, ribbonNone);
-    colores(8, conven5, conven5, ribbonNone);
+    colores(6, conven1, conven2);
+    colores(7, conven1, conven2);
+    colores(8, conven5, conven5);
     colores(9, conven3, conven4, ribbonNone);
-    colores(10, conven5, conven5, ribbonNone);
+    colores(10, conven5, conven5);
     colores(11, conven3, conven4, ribbonNone);
     colores(12, conven3, conven4, ribbonNone);
+    colores(13, conven3, conven4, ribbonNone);
 }
 
 function dpu(){
@@ -260,12 +261,13 @@ function dpu(){
     colores(4, conven1, conven2);
     colores(5, conven1, conven2);
     colores(6, conven1, conven2);
-    colores(7, conven1, conven2, ribbonNone);
-    colores(8, conven1, conven2, ribbonNone);
-    colores(9, conven3, conven4, ribbonNone);
-    colores(10, conven5, conven5, ribbonNone);
-    colores(11, conven1, conven2, ribbonNone);
-    colores(12, conven3, conven4, ribbonNone);
+    colores(7, conven1, conven2);
+    colores(8, conven1, conven2);
+    colores(9, conven3, conven4);
+    colores(10, conven3, conven4, ribbonNone);
+    colores(11, conven5, conven5, ribbonNone);
+    colores(12, conven5, conven5, ribbonNone);
+    colores(13, conven3, conven4, ribbonNone);
 }
 
 function ddp(){
