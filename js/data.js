@@ -165,7 +165,7 @@ const info = [{
         sigla: "CIF",
         subtitulo: "Cost, Insurance and Freight/Coste, Seguro y Flete",
         descripcion: "Es el complemento del CFR, donde se adiciona el seguro marítimo a cargo del vendedor, en este caso el vendedor debe asumir los costos generado en origen sumando el flete internacional y el seguro, (transporte local en origen, aduana de exportación, manipulación de carga en puerto, flete internacional y seguro), el comprador asume los gastos ocasionados como (manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
-        imagen: "images/cif.mp4",
+        imagen: "images/cfr.mp4",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
             <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
             <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
