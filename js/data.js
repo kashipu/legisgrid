@@ -72,7 +72,7 @@ const info = [{
         sigla: "CIP",
         subtitulo: "Carriage and Insurance Paid to / Transporte y Seguro Pagados hasta",
         descripcion: "Es el complemento del Incoterm®  CPT, se incluye el valor del seguro que es asumido por el vendedor. El vendedor debe asumir todos los gastos relacionados con manipulación, transporte local, trámites de exportación, despacho aduanero, transporte internacional y seguro. No obstante la responsabilidad del comprador inicia al finalizar el transporte internacional.",
-        imagen: "cip.mp4",
+        imagen: "images/cip.mp4",
         checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>El vendedor debe asumir el valor del seguro.</li>
         <li>La responsabilidad la asume el comprador al finalizar el transporte internacional.</li>
