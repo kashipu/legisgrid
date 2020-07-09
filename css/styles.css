@@ -17,6 +17,7 @@
     --Cnv3: #FF8A00;
     --Cnv4: #FEC685;
     --Cnv5: #8321FF;
+    --Cnv6: #E7004C;
     font-size: 16px;
 }
 
@@ -433,6 +434,20 @@ button {
     align-items: center;
 }
 
+.conven-item-1 {
+    padding: 0rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.conven-item-1 i {
+    color: white;
+}
+
+.conven-item-1 p {
+    margin-left: 8px;
+}
+
 .color-conven {
     background-color: var(--CBlue2);
     padding: .8rem;
@@ -457,6 +472,12 @@ button {
 
 .colorConven5 {
     background-color: var(--Cnv5);
+}
+
+.colorConven6 {
+    background-color: var(--Cnv6);
+    margin: .5rem 0rem;
+    padding: .5rem;
 }
 
 .conven-item p {
