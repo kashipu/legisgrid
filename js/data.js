@@ -30,7 +30,6 @@ const summarAll = `<li>Vendedor: Persona encargada de la venta o comercializaci�
 
 const info = [{
         sigla: "EXW",
-        audio: "audios/pruebainc.mp3",
         subtitulo: "Exworks en fábrica",
         descripcion: "El vendedor únicamente es responsable de entregar la mercancía en el lugar designadas por el mismo bien sea (fábrica, almacén, taller etc.) y  el comprador asume todos los riesgos y los costos desde el momento que recibe la mercancía hasta su destino.",
         imagen: "images/exw_1.gif",
@@ -44,7 +43,6 @@ const info = [{
     },
     {
         sigla: "FCA",
-        audio: "",
         subtitulo: "Free Carrier / Franco Porteador",
         descripcion: "Se debe acordar o concretar un punto de entrega de la mercancía al transportista (transitario, naviera, aerolínea, etc.)  elegido por el comprador, el vendedor debe hacer la entrega de la mercancía una vez superada la aduana de exportación, asumiendo los gastos generado por manipulación, transporte, descargue y costos aduaneros desde el almacén o fábrica hasta el lugar o punto fijado para ello.",
         imagen: "images/fca_1.gif",
@@ -96,7 +94,7 @@ const info = [{
         sigla: "DPU",
         subtitulo: "Delivered at place unloaded / Mercancía entregada y descargada",
         descripcion: "El vendedor entrega la mercancía hasta el sitio en destino, cubriendo todos los gastos generados en transporte local, internacional, seguro, aduana de exportación y manipulación de carga en origen y destino, transporte en destino. el comprador debe cubrir los gastos generados en aduana de importación y pago de impuestos.",
-        imagen: "images/dpu_1.gif",
+        imagen: "images/dpu.gif",
         checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía incluyendo el descargue, excluyendo los gastos en aduana de importación.</li>
         <li>El vendedor asume todos los riesgos hasta hacer la entrega de la mercancía en el punto acordado y descargada.</li>
         <li>El comprador asume todos los gastos de importación.</li>
