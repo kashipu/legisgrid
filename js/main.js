@@ -17,21 +17,15 @@ function colores(i, colorBox1, colorBox2, ribbon) {
     ribbonShow.classList.add(ribbon)
 }
 
-function audioPlay() {
-    let player = document.querySelector('#audioTag');
-    let iconplay = document.querySelector('#iconplay')
-    let iconpause = document.querySelector('#iconpause')
-    player.play()
-    iconplay.classList.add('none-ico');
-    iconpause.classList.remove('none-ico')}
 
-function audioPause() {
-    let player = document.querySelector('#audioTag');
-    let iconplay = document.querySelector('#iconplay');
-    let iconpause = document.querySelector('#iconpause');
-    player.pause()
-    iconplay.classList.remove('none-ico');
-    iconpause.classList.add('none-ico');
+function scrollButton() {
+    let scrollContainer = document.querySelector("#scrollContent")
+    scrollContainer.scrollLeft += 223
+    console.log(scrollContainer.scrollLeft);
+    //Total width = 2680
+    if (scrollContainer.scrollLeft > 2679){
+        scrollContainer.scrollLeft = 0
+    }  
 }
 
 function toggle() {

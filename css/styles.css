@@ -50,6 +50,10 @@ button {
     margin-bottom: 2rem;
 }
 
+.mr-2 {
+    margin-right: 2rem;
+}
+
 .btn-inc-fucia {
     color: var(--Cwhite);
     background-color: var(--CFucia);
@@ -339,6 +343,7 @@ button {
     padding-left: 1rem;
     display: inline-block;
     align-self: center;
+    cursor: pointer;
 }
 
 .icono-flecha {
