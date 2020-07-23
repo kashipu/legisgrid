@@ -32,7 +32,7 @@ const info = [{
         sigla: "EXW",
         subtitulo: "Exworks en fábrica",
         descripcion: "El vendedor únicamente es responsable de entregar la mercancía en el lugar designadas por el mismo bien sea (fábrica, almacén, taller etc.) y  el comprador asume todos los riesgos y los costos desde el momento que recibe la mercancía hasta su destino.",
-        imagen: "images/exw_1.gif",
+        imagen: "images/exw.gif",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
         <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
         <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
@@ -45,7 +45,7 @@ const info = [{
         sigla: "FCA",
         subtitulo: "Free Carrier / Franco Porteador",
         descripcion: "Se debe acordar o concretar un punto de entrega de la mercancía al transportista (transitario, naviera, aerolínea, etc.)  elegido por el comprador, el vendedor debe hacer la entrega de la mercancía una vez superada la aduana de exportación, asumiendo los gastos generado por manipulación, transporte, descargue y costos aduaneros desde el almacén o fábrica hasta el lugar o punto fijado para ello.",
-        imagen: "images/fca_1.gif",
+        imagen: "images/fca.gif",
         checklisk: `<li>Cuenta con dos condiciones de entrega</li>
         <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
         <li>El vendedor es responsable de perdida o daños hasta que se haya entregado al porteador o persona designada por el comprador.</li>
@@ -58,7 +58,7 @@ const info = [{
         sigla: "CPT",
         subtitulo: "Carriage Paid To / Transporte pagado hasta",
         descripcion: "El vendedor hace la entrega de la mercancía y asume el costo del transporte hasta un puerto o destino acordado, incluyendo todos los gastos, trámites de exportación, despacho aduanero y transporte internacional. No obstante la responsabilidad y el riesgo la asume el comprador desde que inicia el transporte internacional",
-        imagen: "images/cpt_1.gif",
+        imagen: "images/cpt.gif",
         checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad o operaciones de recuento.</li>
         <li>El comprador asume la responsabilidad y riesgo desde que inicia el transporte internacional.</li>
         <li>El vendedor debe asumir los costos de despacho de aduana.</li>
@@ -70,7 +70,7 @@ const info = [{
         sigla: "CIP",
         subtitulo: "Carriage and Insurance Paid to / Transporte y Seguro Pagados hasta",
         descripcion: "Es el complemento del Incoterm®  CPT, se incluye el valor del seguro que es asumido por el vendedor. El vendedor debe asumir todos los gastos relacionados con manipulación, transporte local, trámites de exportación, despacho aduanero, transporte internacional y seguro. No obstante la responsabilidad del comprador inicia al finalizar el transporte internacional.",
-        imagen: "images/cip_1.gif",
+        imagen: "images/cip.gif",
         checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>El vendedor debe asumir el valor del seguro.</li>
         <li>La responsabilidad la asume el comprador al finalizar el transporte internacional.</li>
@@ -82,7 +82,7 @@ const info = [{
         sigla: "DAP",
         subtitulo: "Delivered At Place / Entregada en Lugar Convenido",
         descripcion: "El vendedor entrega la mercancía y asume los costos generados en origen tales como (transporte, cargue, aduana exportación, transporte internacional, seguro y demás movimientos ocasionados para lograr el despacho de la mercancía) y costos en destino como ( gastos por manipulación y movimiento de la mercancía y transporte en destino hasta entregar la mercancía en un punto acordado).  el comprador debe asumir los costos y gastos en aduana de importación.",
-        imagen: "images/dap_1.gif",
+        imagen: "images/dap.gif",
         checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía, excluyendo los gastos en aduana de importación.</li>
         <li>El comprador debe asumir los gastos relacionados con la aduana de importación.</li>
         <li>El vendedor le hace la entrega de la mercancía al comprador en el punto acordado, poniéndola a disposición en los medios de transporte de llegada.</li>
@@ -107,7 +107,7 @@ const info = [{
         sigla: "DDP",
         subtitulo: "Delivered Duty Paid / Entrega con Derechos Pagados",
         descripcion: "El DDP establece que el vendedor cubre todos los gastos ocasionados tanto en origen como en destino, excluyendo el descargue en destino, el vendedor adquiere el riesgo una vez la mercancía sea entregada o llegue al sitio acordado en destino.",
-        imagen: "images/ddp_1.gif",
+        imagen: "images/ddp.gif",
         checklisk: `<li>El vendedor asume todos los gastos generados en origen como en destino, sin incluir el descargue de la mercancía en el punto acordado.</li>
         <li>Se recomienda acordar el seguro para esa operación.</li>
         <li>El comprador no tiene ninguna responsabilidad con el transporte.</li>
@@ -118,7 +118,7 @@ const info = [{
         sigla: "FAS",
         subtitulo: "Free Alongside Ship / Franco al Costado del Buque",
         descripcion: "El vendedor se hace cargo de la entrega de la mercancía en el puerto de embarque, es decir el vendedor asume los costos generado hasta la entrega de la mercancía en puerto (transporte en origen, aduana  de exportación y demás gastos que se generen al ingresar y dejar la mercancía a disposición del puerto), el comprador asume el riesgo una vez sea transferida la responsabilidad en el puerto de origen hasta la entrega de la mercancía en destino, debe asumir los gastos generados tales como (manipulación de carga en  puerto origen, flete internacional, seguro, manipulación de carga en destino, aduana y transporte local).",
-        imagen: "images/fas_1.gif",
+        imagen: "images/fas.gif",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
             <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
             <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
@@ -133,7 +133,7 @@ const info = [{
         sigla: "FOB",
         subtitulo: "Free On Board / Franco a Bordo",
         descripcion: "El vendedor hace la entrega de la mercancía a bordo del buque, cubriendo los gastos generados en origen tales como (transporte local, aduana de exportación y manipulación de mercancía)  Asimismo, el comprador asume  todos los costos y riesgos de daño o pérdida desde ese lugar. (flete internacional, seguro, manipulacion de mercancia, aduana de importación y transporte local en destino).",
-        imagen: "images/fob_1.gif",
+        imagen: "images/fob.gif",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
             <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
             <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
@@ -148,7 +148,7 @@ const info = [{
         sigla: "CFR",
         subtitulo: "Cost and Freight / Coste y Flete",
         descripcion: "Incoterms utilizado únicamente para transporte por marítimo o fluvial, en este caso el vendedor asume los costos generados  hasta entregar la mercancía en puerto de destino tales como (transporte local en origen, aduana de exportación, manipulación de carga en puerto, y flete internacional), de este modo transfiere el riesgo al comprador una vez esté la mercancía en puerto de destino, de este modo el comprador asume los gastos ocasionados como (seguro, manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
-        imagen: "images/cfr_1.gif",
+        imagen: "images/cfr.gif",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
             <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
             <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
@@ -163,7 +163,7 @@ const info = [{
         sigla: "CIF",
         subtitulo: "Cost, Insurance and Freight/Coste, Seguro y Flete",
         descripcion: "Es el complemento del CFR, donde se adiciona el seguro marítimo a cargo del vendedor, en este caso el vendedor debe asumir los costos generado en origen sumando el flete internacional y el seguro, (transporte local en origen, aduana de exportación, manipulación de carga en puerto, flete internacional y seguro), el comprador asume los gastos ocasionados como (manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
-        imagen: "images/cfr_1.gif",
+        imagen: "images/fob.gif",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
             <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
             <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
