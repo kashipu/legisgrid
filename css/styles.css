@@ -83,7 +83,7 @@ button {
 
 .container-inc {
     display: grid;
-    grid-template: 50px 100vh 340px / 250px 1fr minmax(5px, 1fr);
+    grid-template: 50px 1fr 340px / 250px 1fr minmax(5px, 1fr);
     height: 100vh;
     justify-items: strech;
 }
@@ -177,7 +177,7 @@ button {
 .content-inc {
     /* background-color: lightsalmon; */
     grid-column: 2 / span 3;
-    overflow: auto;
+    /* overflow: auto; */
     /* padding: 1rem 1.5rem; */
 }
 
@@ -188,7 +188,7 @@ button {
 /* Subgrid */
 .subgrid {
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 450px;
+    grid-template: 3.85rem 1fr 1fr / 1fr 450px;
 
 }
 
