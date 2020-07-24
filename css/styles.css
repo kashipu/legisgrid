@@ -565,9 +565,16 @@ footer {
     margin-bottom: 1rem;
 }
 
+
+
 .f-colum ul li {
     list-style: none;
     line-height: 1.8;
+}
+
+.f-colum a {
+   color: white;
+   text-decoration: none;
 }
 
 .f-colum strong {
