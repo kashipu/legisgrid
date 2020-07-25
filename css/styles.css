@@ -83,7 +83,7 @@ button {
 
 .container-inc {
     display: grid;
-    grid-template: 50px 100vh 340px / 250px 1fr minmax(5px, 1fr);
+    grid-template: 50px 1fr 340px / 250px 1fr minmax(5px, 1fr);
     height: 100vh;
     justify-items: strech;
 }
@@ -177,7 +177,7 @@ button {
 .content-inc {
     /* background-color: lightsalmon; */
     grid-column: 2 / span 3;
-    overflow: auto;
+    /* overflow: auto; */
     /* padding: 1rem 1.5rem; */
 }
 
@@ -188,7 +188,7 @@ button {
 /* Subgrid */
 .subgrid {
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 450px;
+    grid-template: 3.85rem 1fr 1fr / 1fr 450px;
 
 }
 
@@ -299,7 +299,7 @@ button {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .img-inc img {
@@ -565,9 +565,16 @@ footer {
     margin-bottom: 1rem;
 }
 
+
+
 .f-colum ul li {
     list-style: none;
     line-height: 1.8;
+}
+
+.f-colum a {
+   color: white;
+   text-decoration: none;
 }
 
 .f-colum strong {
@@ -639,6 +646,7 @@ footer {
 
     .show-ico {
         display: block;
+        height: 100vh;
         padding: 0;
         grid-column: 1 / span 4;
     }
@@ -653,7 +661,7 @@ footer {
 
     .subgrid {
         display: grid;
-        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+        grid-template: 1fr / 1fr 1fr;
     }
 
     .scroll-content-inc {
