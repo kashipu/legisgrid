@@ -23,7 +23,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
+}
+
+.bordercustom {
+    border: 1px solid red;
+    background-color: yellow;
 }
 
 button {
@@ -81,19 +85,21 @@ button {
 }
 
 
+
+
 .container-inc {
     display: grid;
-    grid-template: 50px 1fr 340px / 250px 1fr minmax(5px, 1fr);
-    height: 100vh;
-    justify-items: strech;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 55px 1fr;
+    /* 1fr 340px */
+    justify-items: stretch;
 }
-
 
 /* Header */
 .header-inc {
     background-color: var(--CBlue);
     color: var(--Cwhite);
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,13 +115,15 @@ button {
     cursor: pointer;
 }
 
+
 /* Navegacion */
 .nav-inc {
+    grid-column: 1 / span 1;
+    /* grid-row: 2 / span 1; */
     background-color: var(--Cwhite);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    grid-row: 2 / span 1;
     padding: 0;
 }
 
@@ -155,6 +163,12 @@ button {
     border-bottom: .09rem solid var(--CYellow) !important;
 }
 
+/* Subgrid */
+.subgrid {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    /* grid-template-rows:3.85rem 1fr; */
+}
 
 /* Texto de ayuda */
 .help-text-inc {
@@ -173,27 +187,30 @@ button {
     color: var(--CBlack);
 }
 
-/* Contenido */
-.content-inc {
-    /* background-color: lightsalmon; */
-    grid-column: 2 / span 3;
-    /* overflow: auto; */
-    /* padding: 1rem 1.5rem; */
-}
 
 .content-inc-wrapper {
     border: 1px solid red;
 }
 
-/* Subgrid */
-.subgrid {
-    display: grid;
-    grid-template: 3.85rem 1fr 1fr / 1fr 450px;
 
-}
 
 .title-inc {
+    grid-column: 1 / span 1;
     padding: 1rem 1.8rem;
+}
+
+.img-inc {
+    grid-column: 2 / span 1;
+    width: 100%;
+    padding: 0;
+    align-self: center;
+}
+
+
+.carousel-inc {
+    grid-column: 1 / span 2;
+    overflow: hidden;
+    padding: .5rem 1.8rem;
 }
 
 .encabezado-inc {
@@ -216,15 +233,6 @@ button {
     color: var(--CYellow);
 }
 
-.tooltip-inc {
-    display: flex !important;
-    align-items: center;
-    margin-left: .5rem;
-    display: inline-block;
-    color: var(--CBlue2);
-    cursor: pointer;
-}
-
 
 .tooltip-expand {
     display: none;
@@ -237,9 +245,6 @@ button {
     padding: .4rem 2rem;
 }
 
-.tooltip-inc:hover .tooltip-expand {
-    display: block;
-}
 
 .title-name-inc {
     font-size: 1.5rem;
@@ -294,23 +299,14 @@ button {
     line-height: 180%;
 }
 
-.img-inc {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
+
 
 .img-inc img {
     padding: 1rem;
     width: 100%;
 }
 
-.carousel-inc {
-    padding: .5rem 1.8rem;
-    grid-column: 1 / span 2;
-}
+
 
 .title-carousel-inc {
     font-size: 1.5rem;
@@ -494,6 +490,11 @@ button {
     grid-column: 1 / span 2;
 }
 
+.summ-content h3 {
+    font-weight: 700;
+    margin: 1rem 0rem;
+}
+
 .title-summ {
     font-size: 1.5rem;
     font-weight: 700;
@@ -531,13 +532,13 @@ footer {
     background-color: #293AE8;
     color: white;
     display: grid;
-    grid-template: 1fr 100px / repeat(4, 1fr) .4fr;
+    grid-template: 1fr 100px;
     position: relative;
 }
 
 .lemotiv {
     top: 0rem;
-    left: 10rem;
+    left: 7rem;
     position: absolute;
     white-space: nowrap;
 }
@@ -573,8 +574,8 @@ footer {
 }
 
 .f-colum a {
-   color: white;
-   text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .f-colum strong {
@@ -630,113 +631,45 @@ footer {
         display: none;
     }
 
-
-    .header-inc {
-        grid-column: 1 / span 3;
-    }
-
     .nav-inc {
         display: none;
     }
 
-    .help-text-inc {
-        grid-column: 1 / span 3;
-    }
 
-
-    .show-ico {
-        display: block;
-        height: 100vh;
-        padding: 0;
+    .header-inc {
         grid-column: 1 / span 4;
-    }
-
-    .none-ico {
-        display: none !important;
-    }
-
-    .content-inc {
-        grid-column: 1 / span 3;
     }
 
     .subgrid {
-        display: grid;
-        grid-template: 1fr / 1fr 1fr;
-    }
-
-    .scroll-content-inc {
-        margin: 1rem 0rem;
-        padding: 1rem .2rem;
-        box-sizing: border-box;
-        width: 100%;
-        overflow: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-    }
-
-    .title-inc {
-        grid-column: 1 / span 3;
-        padding: 1rem 1.2rem;
-    }
-
-    .img-inc {
-        grid-column: 1 / span 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .checklist-content-box {
-        padding: 1rem 2rem;
-    }
-
-    .carousel-inc {
-        grid-column: 1 / span 3;
-    }
-
-    .flecha {
-        border-left: 1px solid var(--Clightgray);
-        height: 37vh;
-        padding-left: 1rem;
-        display: inline-block;
-        align-self: center;
-    }
-
-    .conven-box-inc {
-        margin-top: .5rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .conven-item {
-        padding: .4rem 0rem;
-        display: flex;
-        align-items: center;
-    }
-
-    .conven-item:first-child {
-        padding: .4rem 0rem;
-    }
-
-    .summ-inc {
-        grid-column: 1 / span 3;
-    }
-
-    .footer-inc {
-        background-color: lightsalmon;
         grid-column: 1 / span 4;
     }
 
-    .item:nth-of-type(6) {
-        background-color: lightsalmon;
-        grid-column: 2 / span 2;
+    .help-text-inc {
+        grid-column: 1 / span 4;
     }
 
-    .item:nth-of-type(7) {
-        background-color: lightgreen;
-        grid-column: 1 / span 3;
-        align-self: end;
+    .title-inc {
+        grid-column: 1 / span 4;
     }
+
+    .img-inc {
+        grid-column: 1 / span 4;
+    }
+
+    .conven-box-inc {
+        flex-direction: column;
+    }
+
+    .colorConven6 {
+        margin-left: .6rem;
+        margin-right: 0rem;
+        padding: .4rem;
+    }
+
+    .colorConven6 i {
+        font-size: 1rem;
+    }
+
 
 
     footer {
@@ -752,7 +685,7 @@ footer {
 
     .lemotiv {
         top: 0rem;
-        left: 35%;
+        left: 5%;
         position: absolute;
         white-space: nowrap;
     }
@@ -829,5 +762,14 @@ footer {
 
 
 
+    .show-ico {
+        display: block;
+        height: 100vh;
+        padding: 0;
+        grid-column: 1 / span 4;
+    }
 
+    .none-ico {
+        display: none !important;
+    }
 }

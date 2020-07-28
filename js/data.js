@@ -1,45 +1,14 @@
-const summarAll = `<li>Vendedor: Persona encargada de la venta o comercialización de un producto.</li>
-<li>Transporte interno: es el desplazamiento que se realiza desde la fábrica hasta un punto
-    acordado.</li>
-<li>Aduana origen: trámites que se deben realizar para la autorización de exportación de la
-    mercancía.</li>
-<li>operación en puerto, aeropuerto o pasos de fronteras según sea el caso: son todos los
-    procedimiento de manipulación de la mercancía para el cargue al transporte internacional.
-</li>
-<li>seguro: contrato que se efectúa con una agencia de seguros con el fin de transferir el
-    riesgo de alguna eventualidad con relación de la mercancía.</li>
-<li>flete: costo que se genera al contratar el transporte (local o internacional) de acuerdo a
-    su negociación.</li>
-<li>tránsito internacional: transporte de la mercancía desde el país de origen a país de
-    destino.</li>
-<li>operación en puerto, aeropuerto o pasos de fronteras según sea el caso: son todos los
-    procedimiento de manipulación de la mercancía para el descargue al transporte internacional.
-</li>
-<li>aduana destino: trámites que se deben realizar para la autorización de la importacion y
-    legalizacion de la entrada de la mercancía en el país de destino.</li>
-<li>transporte interno: es el desplazamiento que se realiza para la entrega de la mercancía al
-    cliente o comprador.</li>
-<li>comprador: la persona encargada de negociar o contratar la compra de un producto en el
-    exterior.</li>
-<li>país de compra: país donde se efectúa la compra de la mercancía.
-<li>País de origen: lugar donde se fabrica la mercancía.
-<li>puerto de embarque: lugar donde se despacha la mercancía.
-<li>país de destino: lugar final donde se recibe la mercancía.</li>`
-
-
-
 const info = [{
         sigla: "EXW",
-        subtitulo: "Exworks en fábrica",
-        descripcion: "El vendedor únicamente es responsable de entregar la mercancía en el lugar designadas por el mismo bien sea (fábrica, almacén, taller etc.) y  el comprador asume todos los riesgos y los costos desde el momento que recibe la mercancía hasta su destino.",
+        subtitulo: "Ex works / En fábrica",
+        descripcion: "El vendedor entrega la mercancía a disposición del comprador en el lugar designado por el mismo bien sea en la fábrica, almacén o taller, entre otros. El comprador asume todos los riesgos y los costos desde el momento que recibe la mercancía hasta su destino.",
         imagen: "images/exw.gif",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
         <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
         <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
-        <li>El comprador debe asumir los costos al momento de entrega de la mercancía no cargada.</li>
-        <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor dispone de los recursos necesarios para la correcta manipulación de la carga.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
-        glosario: summarAll
+        <li>El comprador debe asumir los costos y los riesgos al momento de recibir la mercancía no cargada.</li>
+        <li>Se recomienda que se pacte el cargue de la carga, ya que usualmente el vendedor dispone de los recursos necesarios para la correcta manipulación de la carga.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
     },
     {
         sigla: "FCA",
@@ -52,7 +21,6 @@ const info = [{
         <li>El comprador debe contratar el transporte desde el punto designado de entrega.</li>
         <li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
-        glosario: summarAll,
     },
     {
         sigla: "CPT",
@@ -64,7 +32,6 @@ const info = [{
         <li>El vendedor debe asumir los costos de despacho de aduana.</li>
         <li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
-        glosario: summarAll
     },
     {
         sigla: "CIP",
@@ -76,7 +43,6 @@ const info = [{
         <li>La responsabilidad la asume el comprador al finalizar el transporte internacional.</li>
         <li>El vendedor debe asumir los gastos si se general al realizar las operaciones de verificación de calidad y conteo de la mercancía.</li>
         <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
-        glosario: summarAll
     },
     {
         sigla: "DAP",
@@ -87,8 +53,7 @@ const info = [{
         <li>El comprador debe asumir los gastos relacionados con la aduana de importación.</li>
         <li>El vendedor le hace la entrega de la mercancía al comprador en el punto acordado, poniéndola a disposición en los medios de transporte de llegada.</li>
         <li>Se recomienda acordar el seguro para esa operación.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
-        glosario: summarAll
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
     },
     {
         sigla: "DPU",
@@ -100,8 +65,7 @@ const info = [{
         <li>El comprador asume todos los gastos de importación.</li>
         <li>El comprador debe informar la recepción de la mercancía al vendedor.</li>
         <li>Se recomienda acordar el seguro para esa operación.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
-        glosario: summarAll
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
     },
     {
         sigla: "DDP",
@@ -111,8 +75,7 @@ const info = [{
         checklisk: `<li>El vendedor asume todos los gastos generados en origen como en destino, sin incluir el descargue de la mercancía en el punto acordado.</li>
         <li>Se recomienda acordar el seguro para esa operación.</li>
         <li>El comprador no tiene ninguna responsabilidad con el transporte.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
-        glosario: summarAll
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
     },
     {
         sigla: "FAS",
@@ -126,8 +89,7 @@ const info = [{
             <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
             cargada.</li>
             <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
-        glosario: summarAll
+                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`
     },
     {
         sigla: "FOB",
@@ -141,8 +103,7 @@ const info = [{
             <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
             cargada.</li>
             <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
-        glosario: summarAll
+                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`
     },
     {
         sigla: "CFR",
@@ -156,8 +117,7 @@ const info = [{
             <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
             cargada.</li>
             <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
-        glosario: summarAll
+                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`
     },
     {
         sigla: "CIF",
@@ -171,8 +131,7 @@ const info = [{
             <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
             cargada.</li>
             <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`,
-        glosario: summarAll
+                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`
     }
 ]
 
