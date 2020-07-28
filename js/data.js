@@ -82,61 +82,54 @@ const info = [{
         subtitulo: "Free Alongside Ship / Franco al Costado del Buque",
         descripcion: "El vendedor se hace cargo de la entrega de la mercancía en el puerto de embarque, es decir el vendedor asume los costos generado hasta la entrega de la mercancía en puerto (transporte en origen, aduana  de exportación y demás gastos que se generen al ingresar y dejar la mercancía a disposición del puerto), el comprador asume el riesgo una vez sea transferida la responsabilidad en el puerto de origen hasta la entrega de la mercancía en destino, debe asumir los gastos generados tales como (manipulación de carga en  puerto origen, flete internacional, seguro, manipulación de carga en destino, aduana y transporte local).",
         imagen: "images/fas.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`
+        checklisk: `<li>FAS solo se debe utilizar en transporte por mar o vías navegables.</li>
+        <li>El vendedor entrega la mercancía al costado del buque o en el punto de carga asignado por el
+            comprador.</li>
+        <li>El vendedor hace la transmisión del riesgo de pérdida o daño una vez se haya entregado la
+            mercancía según lo acordado en el numeral A2 de las obligaciones del vendedor. </li>
+        <li>El comprador debe contratar el transporte internacional desde el puerto de embarque hasta el
+            lugar de destino.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
     },
     {
         sigla: "FOB",
         subtitulo: "Free On Board / Franco a Bordo",
         descripcion: "El vendedor hace la entrega de la mercancía a bordo del buque, cubriendo los gastos generados en origen tales como (transporte local, aduana de exportación y manipulación de mercancía)  Asimismo, el comprador asume  todos los costos y riesgos de daño o pérdida desde ese lugar. (flete internacional, seguro, manipulacion de mercancia, aduana de importación y transporte local en destino).",
         imagen: "images/fob.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`
+        checklisk: `<li>FOB solo se debe utilizar en transporte por mar o vías navegables.</li>
+        <li>El vendedor debe hacer entrega de la mercancía a bordo del buque.</li>
+        <li>Los gastos de aduana de exportación deben ser cubiertos por el vendedor.</li>
+        <li>El comprador debe contratar a sus despensas el transporte internacional y seguro.</li>
+        <li>El vendedor transmite el riesgo una vez sea puesta la carga a bordo del buque. </li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
     },
     {
         sigla: "CFR",
         subtitulo: "Cost and Freight / Coste y Flete",
         descripcion: "Incoterms utilizado únicamente para transporte por marítimo o fluvial, en este caso el vendedor asume los costos generados  hasta entregar la mercancía en puerto de destino tales como (transporte local en origen, aduana de exportación, manipulación de carga en puerto, y flete internacional), de este modo transfiere el riesgo al comprador una vez esté la mercancía en puerto de destino, de este modo el comprador asume los gastos ocasionados como (seguro, manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
         imagen: "images/cfr.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`
+        checklisk: `<li>CFR solo se debe utilizar en transporte por mar o vías navegables.</li>
+        <li>El vendedor entrega la mercancía a bordo del buque.</li>
+        <li>El vendedor transmite el riesgo cuando entrega la carga a bordo del buque.</li>
+        <li>El vendedor debe contratar el transporte hasta el puerto de destino acordado.</li>
+        <li>Se recomienda al comprador asegurar la carga.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
     },
     {
         sigla: "CIF",
         subtitulo: "Cost, Insurance and Freight/Coste, Seguro y Flete",
         descripcion: "Es el complemento del CFR, donde se adiciona el seguro marítimo a cargo del vendedor, en este caso el vendedor debe asumir los costos generado en origen sumando el flete internacional y el seguro, (transporte local en origen, aduana de exportación, manipulación de carga en puerto, flete internacional y seguro), el comprador asume los gastos ocasionados como (manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
         imagen: "images/fob.gif",
-        checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
-            <li>El vendedor no está obligado a realizar el cargue de la mercancía.</li>
-            <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado
-                necesario.</li>
-            <li>El comprador debe asumir los costos al momento de entrega de la mercancía no
-            cargada.</li>
-            <li>Se recomienda que se pacte el cargue de la carga ya que usualmente el vendedor
-                    dispone de los recursos necesarios para la correcta manipulación de la carga.</li>`
+        checklisk: `<li>CIF solo se debe utilizar en transporte por mar o vías navegables.</li>
+        <li>El vendedor asume los gastos del seguro y del flete internacional de la carga.</li>
+        <li>El comprador debe asumir los gastos en destino, tales como aduana de importación como
+            transportes locales.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
     }
 ]
 
 function exw(){
-    colores(1, conven1, conven2);
+    colores(1, conven1, conven2, ribbonNone);
     colores(2, conven3, conven4, ribbonNone);
     colores(3, conven3, conven4, ribbonNone);
     colores(4, conven3, conven4, ribbonNone);
@@ -149,13 +142,14 @@ function exw(){
     colores(11, conven3, conven4, ribbonNone);
     colores(12, conven3, conven4, ribbonNone);
     colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function fca(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven5, conven5);
-    colores(4, conven1, conven2);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven5, conven5, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
     colores(5, conven3, conven4, ribbonNone);
     colores(6, conven3, conven4, ribbonNone);
     colores(7, conven3, conven4, ribbonNone);
@@ -165,92 +159,100 @@ function fca(){
     colores(11, conven3, conven4, ribbonNone);
     colores(12, conven3, conven4, ribbonNone);
     colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function cpt(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven1, conven2);
-    colores(6, conven1, conven4);
-    colores(7, conven3, conven4, ribbonNone);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven4, ribbonNone);
     colores(8, conven3, conven4, ribbonNone);
     colores(9, conven3, conven4, ribbonNone);
     colores(10, conven3, conven4, ribbonNone);
     colores(11, conven3, conven4, ribbonNone);
     colores(12, conven3, conven4, ribbonNone);
     colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function cip(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven1, conven2);
-    colores(6, conven1, conven4);
-    colores(7, conven1, conven4);
-    colores(8, conven3, conven4, ribbonNone);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven4, ribbonNone);
+    colores(8, conven1, conven4, ribbonNone);
     colores(9, conven3, conven4, ribbonNone);
     colores(10, conven3, conven4, ribbonNone);
     colores(11, conven3, conven4, ribbonNone);
     colores(12, conven3, conven4, ribbonNone);
+    colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function dap(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven1, conven2);
-    colores(6, conven1, conven2);
-    colores(7, conven1, conven2);
-    colores(8, conven5, conven5);
-    colores(9, conven3, conven4, ribbonNone);
-    colores(10, conven3, conven4);
-    colores(11, conven5, conven5, ribbonNone);
-    colores(12, conven3, conven4, ribbonNone);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven2, ribbonNone);
+    colores(8, conven1, conven2, ribbonNone);
+    colores(9, conven5, conven5, ribbonNone);
+    colores(10, conven5, conven5, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven5, conven5, ribbonNone);
     colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function dpu(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven1, conven2);
-    colores(6, conven1, conven2);
-    colores(7, conven1, conven2);
-    colores(8, conven1, conven2);
-    colores(9, conven3, conven4);
-    colores(10, conven3, conven4, ribbonNone);
-    colores(11, conven5, conven5);
-    colores(12, conven5, conven5);
-    colores(13, conven3, conven4, ribbonNone);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven2, ribbonNone);
+    colores(8, conven1, conven2, ribbonNone);
+    colores(9, conven1, conven2, ribbonNone);
+    colores(10, conven1, conven2, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven1, conven2, ribbonNone);
+    colores(13, conven1, conven2, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function ddp(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven1, conven2);
-    colores(6, conven1, conven2);
-    colores(7, conven1, conven2);
-    colores(8, conven1, conven2);
-    colores(9, conven1, conven2);
-    colores(10, conven1, conven2);
-    colores(11, conven3, conven4);
-    colores(12, conven3, conven4);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven2, ribbonNone);
+    colores(8, conven1, conven2, ribbonNone);
+    colores(9, conven1, conven2, ribbonNone);
+    colores(10, conven1, conven2, ribbonNone);
+    colores(11, conven1, conven2, ribbonNone);
+    colores(12, conven1, conven2, ribbonNone);
+    colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function fas(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven3, conven4);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
     colores(6, conven3, conven4, ribbonNone);
     colores(7, conven3, conven4, ribbonNone);
     colores(8, conven3, conven4, ribbonNone);
@@ -259,50 +261,56 @@ function fas(){
     colores(11, conven3, conven4, ribbonNone);
     colores(12, conven3, conven4, ribbonNone);
     colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function fob(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven1, conven2);
-    colores(6, conven3, conven4);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
     colores(7, conven3, conven4, ribbonNone);
     colores(8, conven3, conven4, ribbonNone);
     colores(9, conven3, conven4, ribbonNone);
     colores(10, conven3, conven4, ribbonNone);
     colores(11, conven3, conven4, ribbonNone);
     colores(12, conven3, conven4, ribbonNone);
+    colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
 
 function cfr(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven1, conven2);
-    colores(6, conven1, conven4);
-    colores(7, conven3, conven4);
-    colores(8, conven3, conven4);
-    colores(9, conven3, conven4);
-    colores(10, conven3, conven4);
-    colores(11, conven3, conven4, ribbonNone);
-    colores(12, conven3, conven4, ribbonNone);
-}
-
-function cif(){
-    colores(1, conven1, conven2);
-    colores(2, conven1, conven2);
-    colores(3, conven1, conven2);
-    colores(4, conven1, conven2);
-    colores(5, conven1, conven2);
-    colores(6, conven1, conven4);
-    colores(7, conven1, conven4);
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven4, ribbonNone);
     colores(8, conven3, conven4, ribbonNone);
     colores(9, conven3, conven4, ribbonNone);
     colores(10, conven3, conven4, ribbonNone);
     colores(11, conven3, conven4, ribbonNone);
     colores(12, conven3, conven4, ribbonNone);
     colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
+}
+
+function cif(){
+    colores(1, conven1, conven2, ribbonNone);
+    colores(2, conven1, conven2, ribbonNone);
+    colores(3, conven1, conven2, ribbonNone);
+    colores(4, conven1, conven2, ribbonNone);
+    colores(5, conven1, conven2, ribbonNone);
+    colores(6, conven1, conven2, ribbonNone);
+    colores(7, conven1, conven4, ribbonNone);
+    colores(8, conven1, conven4, ribbonNone);
+    colores(9, conven3, conven4, ribbonNone);
+    colores(10, conven3, conven4, ribbonNone);
+    colores(11, conven3, conven4, ribbonNone);
+    colores(12, conven3, conven4, ribbonNone);
+    colores(13, conven3, conven4, ribbonNone);
+    colores(14, conven3, conven4, ribbonNone);
 }
