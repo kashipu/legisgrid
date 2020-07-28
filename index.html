@@ -14,7 +14,7 @@
 <body>
     <div class="container-inc">
         <!-- header -->
-        <div class="item-inc header-inc">
+        <div class="header-inc">
             <button id="btnmenu" onclick="toggle()" aria-label="Botón Menú" aria-expanded="false"><i
                     class="fa fa-bars fa-lg"></i></button>
             <h1 class="titleh1">Incoterms<small>&#174;</small> 2020</h1>
@@ -22,7 +22,7 @@
                         aria-hidden="true"></i></em><span>Modo accesibilidad</span></button>
         </div>
         <!-- navegación -->
-        <div id="navToggle" class="item-inc nav-inc">
+        <div id="navToggle" class="nav-inc">
             <ul>
                 <li class="nav-item-ico">
                     <button class="nav-item-button" onclick="insertInfo(0)">
@@ -81,8 +81,8 @@
                 </li>
             </ul>
         </div>
-
-        <div id="contentBox" class="subgrid">
+        <!-- Contenedor -->
+        <div id="contentBox" class="contenido-inc subgrid">
             <div id="helpText" class="help-text-inc">
                 <h2>OTROS MODOS DE TRANSPORTE</h2>
             </div>
@@ -359,7 +359,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item-inc summ-inc">
+            <div class="summ-inc">
                 <h2 class="title-summ">Recomendaciones</h2>
                 <div class="checklist-content mb-2-inc">
                     <ul class="summ-content">
@@ -453,7 +453,8 @@
                 </div>
             </div>
         </div>
-        <div id="footerBox" class="item-inc footer-inc">
+        <!-- Contenedor -->
+        <div id="footerBox" class="footer-inc">
             <footer>
                 <img class="lemotiv" src="images/lemotiv.png" alt="">
                 <div class="f-colum">
