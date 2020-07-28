@@ -37,14 +37,11 @@ function colores(i, colorBox1, colorBox2, ribbon) {
 
 let scrollContainer = document.querySelector("#scrollContent")
 
-
 function scrollButton() {
     let scrollIzq = scrollContainer.scrollLeft
-    let scrollIzqMax = scrollContainer.scrollLeftMax
-    let avanceScroll = scrollContainer.scrollLeftMax / 12
+    let scrollIzqMax = scrollContainer.scrollWidth - scrollContainer.clientWidth
+    let avanceScroll = scrollIzqMax / 12
     scrollContainer.scrollLeft += avanceScroll
-    console.log(scrollIzq);
-    console.log(scrollIzqMax);
     if (scrollIzq >= scrollIzqMax) {
         scrollContainer.scrollLeft = 0
     }
@@ -73,7 +70,6 @@ function toggle() {
     }
 }
 function insertInfo(i) {
-    console.log(i)
     //titulo
     let incTitle = document.querySelector('#inc-title')
     incTitle.innerText = info[i].sigla
