@@ -328,6 +328,7 @@ button {
 .title-carousel-inc small {
     font-size: 1rem;
     font-weight: 300;
+    line-height: 160%;
 }
 
 .scroll-content-inc {
