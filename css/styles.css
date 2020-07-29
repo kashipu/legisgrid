@@ -25,11 +25,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.bordercustom {
-    border: 1px solid red;
-    background-color: yellow;
-}
-
 button {
     display: inline-block;
     text-align: center;
@@ -84,9 +79,6 @@ button {
     margin-right: 1rem;
 }
 
-
-
-
 .container-inc {
     display: grid;
     grid-template-columns: 250px 1fr 1fr 1fr;
@@ -114,7 +106,6 @@ button {
     cursor: pointer;
 }
 
-
 /* Navegacion */
 .nav-inc {
     grid-column: 1 / span 1;
@@ -126,14 +117,12 @@ button {
     padding: 0;
 }
 
-
 .nav-item-button {
     margin: 0;
     padding: 0;
     text-align: left;
     width: 100%;
 }
-
 
 .nav-inc ul li {
     border-bottom: .09rem solid var(--CBlue2);
@@ -168,7 +157,6 @@ button {
 .subgrid {
     display: grid;
     grid-template-columns: 1fr 450px;
-    /* grid-template-rows:3.85rem 1fr; */
 }
 
 /* Texto de ayuda */
@@ -188,12 +176,9 @@ button {
     color: var(--CBlack);
 }
 
-
 .content-inc-wrapper {
     border: 1px solid red;
 }
-
-
 
 .title-inc {
     grid-column: 1 / span 1;
@@ -206,7 +191,6 @@ button {
     padding: 0;
     align-self: center;
 }
-
 
 .carousel-inc {
     grid-column: 1 / span 2;
@@ -234,7 +218,6 @@ button {
     color: var(--CYellow);
 }
 
-
 .tooltip-expand {
     display: none;
     border-radius: 5px;
@@ -245,7 +228,6 @@ button {
     margin-left: 1rem;
     padding: .4rem 2rem;
 }
-
 
 .title-name-inc {
     font-size: 1.5rem;
@@ -259,15 +241,10 @@ button {
     line-height: 160%;
 }
 
-
 .text-intern-inc ul {
     list-style: disc;
     padding-left: 2%;
 }
-
-
-
-
 
 .checklist-inc {
     margin: 1.2rem 0rem;
@@ -310,14 +287,10 @@ button {
     line-height: 180%;
 }
 
-
-
 .img-inc img {
     padding: 1rem;
     width: 100%;
 }
-
-
 
 .title-carousel-inc {
     font-size: 1.5rem;
@@ -361,7 +334,6 @@ button {
     color: var(--CBlue);
 }
 
-
 .scroll-card-inc {
     display: inline-block;
     position: relative;
@@ -381,7 +353,6 @@ button {
     top: 0px;
     position: absolute;
 }
-
 
 .scroll-card-img {
     padding: 0rem 1rem;
@@ -579,8 +550,6 @@ footer {
     margin-bottom: 1rem;
 }
 
-
-
 .f-colum ul li {
     list-style: none;
     line-height: 1.8;
@@ -619,6 +588,11 @@ footer {
     margin: 0 auto;
 }
 
+.text-list a {
+    color: white;
+    text-decoration: none;
+}
+
 .anexo-footer2 {
     display: flex;
     justify-content: center;
@@ -626,7 +600,6 @@ footer {
     align-content: center;
     opacity: .5;
 }
-
 
 @media screen and (max-width:1110px) {
 
