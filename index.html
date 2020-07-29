@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="INCOTERMS 2020">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>INCOTERMS&#174; 2020</title>
@@ -12,13 +13,16 @@
 
 <body>
     <div class="container-inc">
-        <div class="item-inc header-inc">
-            <button id="btnmenu" onclick="toggle()" aria-label="Botón Menú" aria-expanded="false"><i class="fa fa-bars fa-lg"></i></button>
+        <!-- header -->
+        <div class="header-inc">
+            <button id="btnmenu" onclick="toggle()" aria-label="Botón Menú" aria-expanded="false"><i
+                    class="fa fa-bars fa-lg"></i></button>
             <h1 class="titleh1">Incoterms<small>&#174;</small> 2020</h1>
             <button id="btn-a11y" title="Botón Modo Accesibilidad" class="btn-inc-fucia"><em><i class="fa fa-wheelchair"
                         aria-hidden="true"></i></em><span>Modo accesibilidad</span></button>
         </div>
-        <div id="navToggle" class="item-inc nav-inc">
+        <!-- navegación -->
+        <div id="navToggle" class="nav-inc">
             <ul>
                 <li class="nav-item-ico">
                     <button class="nav-item-button" onclick="insertInfo(0)">
@@ -77,26 +81,17 @@
                 </li>
             </ul>
         </div>
-
-        <div id="contentBox" class="item-inc content-inc subgrid">
+        <!-- Contenedor -->
+        <div id="contentBox" class="contenido-inc subgrid">
             <div id="helpText" class="help-text-inc">
                 <h2>OTROS MODOS DE TRANSPORTE</h2>
             </div>
-            <div class="item-inc title-inc">
+            <div class="title-inc">
                 <div class="encabezado-inc">
                     <div id="ficha" class="ficha">
                         <h2 id="inc-title">EXW</h2>
                     </div>
                     <div id="iconBox" class="tooltip-inc">
-                        <!-- <i id="iconplay" class="fa fa-volume-up fa-2x" onclick="audioPlay()" aria-label="Botón Reproducir Audio"></i>
-                        <i id="iconpause" class="fa fa-pause-circle-o fa-2x none-ico" aria-label="Botón Pausar Audio" onclick="audioPause()"
-                            aria-hidden="true"></i>
-                        <audio id="audioTag">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio>
-                        <div class="tooltip-expand">
-                            <span>Aquí puede escuchar <br>este contenido</span>
-                        </div> -->
                     </div>
                 </div>
                 <h2 id="inc-subtitle" class="title-name-inc">Ex Works / En Fábrica</h2>
@@ -107,7 +102,7 @@
                 </p>
                 <div class="checklist-inc">
                     <div class="checklist-head">
-                        Checklist
+                        Consideraciones
                     </div>
                     <div class="checklist-content-box">
                         <ul id="inc-checklist">
@@ -125,10 +120,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item-inc img-inc">
+            <div class="img-inc">
                 <img id="inc-img" src="images/exw_1.gif" alt="">
             </div>
-            <div class="item-inc carousel-inc">
+            <div class="carousel-inc">
                 <h2 class="title-carousel-inc">Proceso <small>- Desliza a la derecha</small></h2>
                 <div class="scroll-container">
                     <ul id="scrollContent" class="scroll-content-inc">
@@ -140,7 +135,7 @@
                                 <img src="images/icons/1.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Embalaje, verificación y control</h3>
+                                <h3>Embalaje, verificación y control <br><br></h3><!-- 1 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -153,7 +148,7 @@
                                 <img src="images/icons/2.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Cargue en el camión <br><br></h3>
+                                <h3>Cargue en el camión <br><br><br></h3><!-- 2 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -166,7 +161,7 @@
                                 <img src="images/icons/3.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Transporte local de origen<br><br></h3>
+                                <h3>Transporte local en origen<br><br><br></h3><!-- 3 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -179,59 +174,7 @@
                                 <img src="images/icons/4.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Aduana de exportación <br><br></h3>
-                            </div>
-                            <div class="scroll-color-box-1"></div>
-                            <div class="scroll-color-box-2"></div>
-                        </li>
-                        <li class="scroll-card-inc">
-                            <div class="scroll-ribbon">
-                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                            </div>
-                            <div class="scroll-card-img">
-                                <img src="images/icons/5-1.svg" alt="">
-                            </div>
-                            <div class="scroll-title-inc-set">
-                                <h3>Operación portuaria en origen, cargue al medio de transporte.</h3>
-                            </div>
-                            <div class="scroll-color-box-1"></div>
-                            <div class="scroll-color-box-2"></div>
-                        </li>
-                        <li class="scroll-card-inc">
-                            <div class="scroll-ribbon">
-                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                            </div>
-                            <div class="scroll-card-img">
-                                <img src="images/icons/multi1.svg" alt="">
-                            </div>
-                            <div class="scroll-title-inc">
-                                <h3>Transporte Principal<br><br></h3>
-                            </div>
-                            <div class="scroll-color-box-1"></div>
-                            <div class="scroll-color-box-2"></div>
-                        </li>
-                        <li class="scroll-card-inc">
-                            <div class="scroll-ribbon">
-                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                            </div>
-                            <div class="scroll-card-img">
-                                <img src="images/icons/7.svg" alt="">
-                            </div>
-                            <div class="scroll-title-inc">
-                                <h3>Seguro de mercancía<br><br></h3>
-                            </div>
-                            <div class="scroll-color-box-1"></div>
-                            <div class="scroll-color-box-2"></div>
-                        </li>
-                        <li class="scroll-card-inc">
-                            <div class="scroll-ribbon">
-                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                            </div>
-                            <div class="scroll-card-img">
-                                <img src="images/icons/5.svg" alt="">
-                            </div>
-                            <div class="scroll-title-inc">
-                                <h3>Operaciones portuarias <br> <br></h3>
+                                <h3>Aduana de exportación <br><br><br></h3><!-- 4 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -244,7 +187,74 @@
                                 <img src="images/icons/5-2.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Descarga en puerto de destino.</h3>
+                                <h3>Operaciones portuarias, aeroportuarias o en pasos de frontera, en origen<br></h3>
+                                <!-- 5 -->
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/5-1.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Cargue al medio de transporte, en origen.<br><br></h3><!-- 6 -->
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/multi1.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Transporte Principal<br><br><br></h3><!-- 7 -->
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/7.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Seguro de mercancía<br><br><br></h3><!-- 8 -->
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/5-1.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Descargue del medio de transporte, en destino.<br><br></h3><!-- 9 -->
+                            </div>
+                            <div class="scroll-color-box-1"></div>
+                            <div class="scroll-color-box-2"></div>
+                        </li>
+                        <li class="scroll-card-inc">
+                            <div class="scroll-ribbon">
+                                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="scroll-card-img">
+                                <img src="images/icons/5-2.svg" alt="">
+                            </div>
+                            <div class="scroll-title-inc">
+                                <h3>Operaciones portuarias, aeroportuarias o en pasos de frontera, en destino.</h3>
+                                <!-- 10 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -257,7 +267,7 @@
                                 <img src="images/icons/4.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Aduana de importación<br><br></h3>
+                                <h3>Aduana de importación<br><br><br></h3><!-- 12 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -270,7 +280,7 @@
                                 <img src="images/icons/3.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Transporte de destino<br><br></h3>
+                                <h3>Transporte en destino<br><br><br></h3><!-- 13 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -283,7 +293,7 @@
                                 <img src="images/icons/11.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Descargue de mercancía<br><br></h3>
+                                <h3>Descargue de mercancía<br><br><br></h3><!-- 14 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -296,7 +306,7 @@
                                 <img src="images/icons/12.svg" alt="">
                             </div>
                             <div class="scroll-title-inc">
-                                <h3>Comprador<br><br></h3>
+                                <h3>Comprador<br><br><br></h3><!-- 15 -->
                             </div>
                             <div class="scroll-color-box-1"></div>
                             <div class="scroll-color-box-2"></div>
@@ -330,53 +340,51 @@
                         <div class="color-conven colorConven5"></div>
                         <p>Depende el lugar de entrega</p>
                     </div>
-                    <div class="conven-item-1">
+                    <!-- <div class="conven-item-1">
                         <div class="color-conven colorConven6"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        <p>Proceso completado</p>
-                    </div>
+                        <p>Procesos que incluye el Incoterms</p>
+                    </div> -->
                 </div>
             </div>
-            <div class="item-inc summ-inc">
+            <div class="summ-inc">
                 <h2 class="title-summ">Recomendaciones</h2>
                 <div class="checklist-content mb-2-inc">
                     <ul class="summ-content">
-                        <li>La factura debe indicar el incoterm utilizado.</li>
-                        <li>En la factura se deben desglasar los gastos de acuerdo al incoterm utilizado.</li>
+                        <li>La factura comercial debe indicar el Incoterms utilizado.</li>
+                        <li>En la factura comercial se deben desglosar los gastos de acuerdo al Incoterms utilizado.
+                        </li>
                         <li>Verificar que la mercancía viaje con un seguro internacional.</li>
-                        <li>Se recomienda validar la información declarada el BL Y/O Guía aérea.</li>
-                        <li>Los datos de consignatario deben ser claros y precisos</li>
+                        <li>Se recomienda validar la información declarada en el BL o Guía Aérea o Carta Porte.</li>
+                        <li>Los datos del consignatario deben ser claros y precisos.</li>
                     </ul>
                 </div>
                 <h2 class="title-summ">Glosario</h2>
-                <div class="checklist-content">
-                    <ul id="inc-summ" class="summ-content">
+                <div id="inc-summ" class="checklist-content summ-content">
+                    <ul>
                         <li>Vendedor: Persona encargada de la venta o comercialización de un producto.</li>
-                        <li>Transporte interno: es el desplazamiento que se realiza desde la fábrica hasta un punto
-                            acordado.</li>
-                        <li>Aduana origen: trámites que se deben realizar para la autorización de exportación de la
-                            mercancía.</li>
-                        <li>operación en puerto, aeropuerto o pasos de fronteras según sea el caso: son todos los
-                            procedimiento de manipulación de la mercancía para el cargue al transporte internacional.
+                        <li>Transporte local en origen: es el desplazamiento en algún medio de transporte que se realiza desde
+                            la fábrica hasta un punto acordado dentro del país de origen o destino.</li>
+                        <li>Aduana de Exportación: hace referencia a los trámites que se deben realizar ante la autoridad
+                            aduanera en el país de origen para dejar la mercancía libre para exportar.</li>
+                        <li>Operación en puerto, aeropuerto o pasos de fronteras según sea el caso: son todos los
+                            procedimientos de manipulación de la mercancía para el cargue al transporte internacional.
                         </li>
-                        <li>seguro: contrato que se efectúa con una agencia de seguros con el fin de transferir el
+                        <li>Seguro: contrato que se efectúa con una agencia de seguros con el fin de transferir el
                             riesgo de alguna eventualidad con relación de la mercancía.</li>
-                        <li>flete: costo que se genera al contratar el transporte (local o internacional) de acuerdo a
+                        <li>Flete: costo que se genera al contratar el transporte (local o internacional) de acuerdo a
                             su negociación.</li>
-                        <li>tránsito internacional: transporte de la mercancía desde el país de origen a país de
+                        <li>Tránsito Internacional: transporte de la mercancía desde el país de origen al país de
                             destino.</li>
-                        <li>operación en puerto, aeropuerto o pasos de fronteras según sea el caso: son todos los
-                            procedimiento de manipulación de la mercancía para el descargue al transporte internacional.
-                        </li>
-                        <li>aduana destino: trámites que se deben realizar para la autorización de la importacion y
+                        <li>Operación en puerto, aeropuerto o pasos de fronteras, en origen: son todos los procedimientos de manipulación de la mercancía en puerto o aeropuerto o en paso de frontera del país de origen.</li>
+                        <li>Aduana de Importación: trámites que se deben realizar para la autorización de la importacion y
                             legalizacion de la entrada de la mercancía en el país de destino.</li>
-                        <li>transporte interno: es el desplazamiento que se realiza para la entrega de la mercancía al
-                            cliente o comprador.</li>
-                        <li>comprador: la persona encargada de negociar o contratar la compra de un producto en el
+                        <li>Transporte en destino: es el desplazamiento que se realiza a través de un medio de transporte para la entrega de la mercancía al cliente o comprador.</li>
+                        <li>Comprador: la persona encargada de negociar o contratar la compra de un producto en el
                             exterior.</li>
-                        <li>país de compra: país donde se efectúa la compra de la mercancía.
-                        <li>País de origen: lugar donde se fabrica la mercancía.
-                        <li>puerto de embarque: lugar donde se despacha la mercancía.
-                        <li>país de destino: lugar final donde se recibe la mercancía.</li>
+                        <li>País de compra: país donde se efectúa la compra de la mercancía.</li>
+                        <li>País de origen: país donde se fabrica la mercancía.</li>
+                        <li>Puerto de embarque: lugar donde se efectúa el despacho la mercancía.</li>
+                        <li>País de destino: país donde se recibe la mercancía.</li>
                     </ul>
                 </div>
 
@@ -392,7 +400,8 @@
                 </div>
             </div>
         </div>
-        <div id="footerBox" class="item-inc footer-inc">
+        <!-- Contenedor -->
+        <div id="footerBox" class="footer-inc">
             <footer>
                 <img class="lemotiv" src="images/lemotiv.png" alt="">
                 <div class="f-colum">
@@ -409,18 +418,32 @@
                 <div class="f-colum">
                     <strong>Sobre nosotros</strong>
                     <ul>
-                        <a href=""><li>Quiénes Somos</li></a> 
-                        <a href=""><li>Punto de venta Legis</li></a>
+                        <a href="">
+                            <li>Quiénes Somos</li>
+                        </a>
+                        <a href="">
+                            <li>Punto de venta Legis</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="f-colum">
                     <strong>Nuestras soluciones</strong>
                     <ul>
-                        <a href=""><li>Jurídico</li></a>
-                        <a href=""><li>Contable y tributario</li></a>
-                        <a href=""><li>Comercio exterior</li></a>
-                        <a href=""><li>Gestión humana</li></a>
-                        <a href=""><li>Actualización profesional</li></a>
+                        <a href="">
+                            <li>Jurídico</li>
+                        </a>
+                        <a href="">
+                            <li>Contable y tributario</li>
+                        </a>
+                        <a href="">
+                            <li>Comercio exterior</li>
+                        </a>
+                        <a href="">
+                            <li>Gestión humana</li>
+                        </a>
+                        <a href="">
+                            <li>Actualización profesional</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="f-colum">

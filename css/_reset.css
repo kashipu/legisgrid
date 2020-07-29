@@ -6,7 +6,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -103,6 +103,19 @@ video {
     outline: 0;
 }
 
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @-ms-viewport {
+    width: device-width;
+  }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -156,8 +169,6 @@ input[type=search]::-webkit-search-results-decoration {
 input[type=search] {
     -webkit-appearance: none;
     -moz-appearance: none;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
 
@@ -389,8 +400,6 @@ input[type="radio"] {
 input[type="search"] {
     -webkit-appearance: textfield;
     /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
     /* 2 */
     box-sizing: content-box;
 }

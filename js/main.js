@@ -35,16 +35,20 @@ function colores(i, colorBox1, colorBox2, ribbon) {
     ribbonShow.classList.add(ribbon)
 }
 
+let scrollContainer = document.querySelector("#scrollContent")
 
 function scrollButton() {
-    let scrollContainer = document.querySelector("#scrollContent")
-    scrollContainer.scrollLeft += 223
-    console.log(scrollContainer.scrollLeft);
-    //Total width = 2680
-    if (scrollContainer.scrollLeft > 2679){
+    let scrollIzq = scrollContainer.scrollLeft
+    let scrollIzqMax = scrollContainer.scrollWidth - scrollContainer.clientWidth
+    let avanceScroll = scrollIzqMax / 12
+    scrollContainer.scrollLeft += avanceScroll
+    if (scrollIzq >= scrollIzqMax) {
         scrollContainer.scrollLeft = 0
-    }  
+    }
 }
+
+
+
 
 function toggle() {
     let queryX = window.matchMedia("(max-width:1110px)")
@@ -66,7 +70,6 @@ function toggle() {
     }
 }
 function insertInfo(i) {
-    console.log(i)
     //titulo
     let incTitle = document.querySelector('#inc-title')
     incTitle.innerText = info[i].sigla
@@ -82,9 +85,6 @@ function insertInfo(i) {
     //Checklist
     let incChecklist = document.querySelector('#inc-checklist')
     incChecklist.innerHTML = info[i].checklisk;
-    //Glosario
-    let incSumm = document.querySelector('#inc-summ')
-    incSumm.innerHTML = info[i].glosario
     //Guia de la página
     let textGuide = document.querySelector('#incTextGuide')
     textGuide.innerHTML = `Página <strong>${i+1} / 11</strong>`
