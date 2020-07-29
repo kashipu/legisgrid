@@ -36,7 +36,7 @@ const info = [{
         <li>El vendedor debe asumir los costos de los trámites de exportación.</li>
         <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
     },
-    {® 
+    {
         sigla: "CIP",
         subtitulo: "Carriage and Insurance Paid to / Transporte y seguro pagados hasta",
         descripcion: "Es el complemento del Incoterms®️2020 CPT, se incluye el valor del seguro que es asumido por el vendedor. El vendedor debe asumir todos los gastos relacionados con manipulación, transporte local, trámites de exportación, transporte internacional y seguro. No obstante, la responsabilidad y el riesgo la asume el comprador desde que inicia el transporte internacional.",
