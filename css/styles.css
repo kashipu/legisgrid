@@ -674,7 +674,7 @@ footer {
 
     .show-ico {
         display: block;
-        height: 100vh;
+        height: 110vh;
         padding: 0;
         grid-column: 1 / span 4;
     }
