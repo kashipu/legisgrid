@@ -8,7 +8,7 @@ const info = [{
         <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
         <li>El comprador debe asumir los costos y los riesgos al momento de recibir la mercancía no cargada.</li>
         <li>Se recomienda que se pacte el cargue de la carga, ya que usualmente el vendedor dispone de los recursos necesarios para la correcta manipulación de la carga.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`
     },
     {
         sigla: "FCA",
@@ -24,7 +24,7 @@ const info = [{
         <li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>El vendedor es responsable de pérdida o daños hasta que se haya entregado al porteador o persona designada por el comprador.</li>
         <li>El comprador debe contratar el transporte desde el punto designado de entrega.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`, 
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`, 
     },
     {
         sigla: "CPT",
@@ -34,7 +34,7 @@ const info = [{
         checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>El comprador asume la responsabilidad y riesgo desde que inicia el transporte internacional.</li>
         <li>El vendedor debe asumir los costos de los trámites de exportación.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`,
     },
     {
         sigla: "CIP",
@@ -48,79 +48,76 @@ const info = [{
     },
     {
         sigla: "DAP",
-        subtitulo: "Delivered At Place / Entregada en Lugar Convenido",
-        descripcion: "El vendedor entrega la mercancía y asume los costos generados en origen tales como (transporte, cargue, aduana exportación, transporte internacional, seguro y demás movimientos ocasionados para lograr el despacho de la mercancía) y costos en destino como ( gastos por manipulación y movimiento de la mercancía y transporte en destino hasta entregar la mercancía en un punto acordado).  el comprador debe asumir los costos y gastos en aduana de importación.",
+        subtitulo: "Delivered At Place / Entregada en lugar designado",
+        descripcion: "El vendedor entrega la mercancía en el país de destino en el medio de transporte y asume los costos generados en origen tales como transporte en origen, cargue, aduana exportación, transporte internacional, seguro internacional y demás movimientos ocasionados para lograr el despacho de la mercancía en el país de origen y los costos en el país de destino como gastos por manipulación, movimiento de la mercancía y transporte en destino hasta entregar la mercancía en el punto designado. El comprador debe asumir los costos y gastos generados en la aduana de importación.",
         imagen: "images/dap.gif",
-        checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía, excluyendo los gastos en aduana de importación.</li>
-        <li>El comprador debe asumir los gastos relacionados con la aduana de importación.</li>
-        <li>El vendedor le hace la entrega de la mercancía al comprador en el punto acordado, poniéndola a disposición en los medios de transporte de llegada.</li>
+        checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía.</li>
+        <li>El comprador debe asumir los gastos relacionados con los trámites generados en la aduana de importación.</li>
+        <li>El vendedor le hace la entrega de la mercancía al comprador en el punto acordado, poniéndola a disposición en los medios de transporte de llegada, no incluye la descarga de la mercancía.</li>
         <li>Se recomienda acordar el seguro para esa operación.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`
     },
     {
         sigla: "DPU",
-        subtitulo: "Delivered at place unloaded / Mercancía entregada y descargada",
-        descripcion: "El vendedor entrega la mercancía hasta el sitio en destino, cubriendo todos los gastos generados en transporte local, internacional, seguro, aduana de exportación y manipulación de carga en origen y destino, transporte en destino. el comprador debe cubrir los gastos generados en aduana de importación y pago de impuestos.",
+        subtitulo: "Delivered at place unloaded / Mercancía entregada en el lugar y descargada",
+        descripcion: "El vendedor entrega la mercancía hasta el sitio en destino, cubre todos los gastos generados en transporte local, internacional, seguro, aduana de exportación, manipulación de carga en origen y destino, transporte en destino y descargue de la mercancía. El comprador debe cubrir los gastos generados en aduana de importación.",
         imagen: "images/dpu.gif",
-        checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía incluyendo el descargue, excluyendo los gastos en aduana de importación.</li>
-        <li>El vendedor asume todos los riesgos hasta hacer la entrega de la mercancía en el punto acordado y descargada.</li>
-        <li>El comprador asume todos los gastos de importación.</li>
+        checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía incluyendo el descargue.</li>
+        <li>El vendedor asume todos los riesgos hasta entregar la mercancía en el punto acordado y descargarla.</li>
+        <li>El comprador asume todos los gastos generados en la aduana de importación.</li>
         <li>El comprador debe informar la recepción de la mercancía al vendedor.</li>
         <li>Se recomienda acordar el seguro para esa operación.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`
     },
     {
         sigla: "DDP",
-        subtitulo: "Delivered Duty Paid / Entrega con Derechos Pagados",
-        descripcion: "El DDP establece que el vendedor cubre todos los gastos ocasionados tanto en origen como en destino, excluyendo el descargue en destino, el vendedor adquiere el riesgo una vez la mercancía sea entregada o llegue al sitio acordado en destino.",
+        subtitulo: "Delivered Duty Paid / Entrega con derechos pagados",
+        descripcion: "El vendedor cubre todos los gastos ocasionados tanto en origen como en destino, el transporte local, internacional, seguro, aduana de exportación, manipulación de carga en origen y destino, transporte en destino, gastos en la aduana de importación, excepto el descargue de la mercancía en destino. El importador debe cubrir los gastos de descargue de la mercancía en el lugar acordado de entrega, en destino.",
         imagen: "images/ddp.gif",
         checklisk: `<li>El vendedor asume todos los gastos generados en origen como en destino, sin incluir el descargue de la mercancía en el punto acordado.</li>
         <li>Se recomienda acordar el seguro para esa operación.</li>
         <li>El comprador no tiene ninguna responsabilidad con el transporte.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`
     },
     {
         sigla: "FAS",
-        subtitulo: "Free Alongside Ship / Franco al Costado del Buque",
-        descripcion: "El vendedor se hace cargo de la entrega de la mercancía en el puerto de embarque, es decir el vendedor asume los costos generado hasta la entrega de la mercancía en puerto (transporte en origen, aduana  de exportación y demás gastos que se generen al ingresar y dejar la mercancía a disposición del puerto), el comprador asume el riesgo una vez sea transferida la responsabilidad en el puerto de origen hasta la entrega de la mercancía en destino, debe asumir los gastos generados tales como (manipulación de carga en  puerto origen, flete internacional, seguro, manipulación de carga en destino, aduana y transporte local).",
+        subtitulo: "Free Alongside Ship / Franco al costado del buque",
+        descripcion: "El vendedor se hace cargo de la entrega de la mercancía en el puerto de embarque y asume todos los gastos generados hasta la entrega de la mercancía en el puerto tales como transporte en origen, trámites en la aduana de exportación y manipulación de la carga hasta dejar la mercancía al costado del buque. El comprador asume el riesgo y los costos desde el cargue de la mercancía al buque. ",
         imagen: "images/fas.gif",
-        checklisk: `<li>FAS solo se debe utilizar en transporte por mar o vías navegables.</li>
-        <li>El vendedor entrega la mercancía al costado del buque o en el punto de carga asignado por el
-            comprador.</li>
-        <li>El vendedor hace la transmisión del riesgo de pérdida o daño una vez se haya entregado la
-            mercancía según lo acordado en el numeral A2 de las obligaciones del vendedor. </li>
-        <li>El comprador debe contratar el transporte internacional desde el puerto de embarque hasta el
-            lugar de destino.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
+        checklisk: `<li>FAS solo se debe utilizar en el transporte por mar o vías navegables.</li>
+        <li>El vendedor entrega la mercancía al costado del buque o en el punto de carga asignado por el comprador.</li>
+        <li>El vendedor hace la transmisión del riesgo de pérdida o daño una vez se haya entregado la mercancía según lo acordado en el numeral A2 de las obligaciones del vendedor.</li>
+        <li>El comprador debe contratar el transporte internacional desde el puerto de embarque hasta el lugar de destino.</li>
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`
     },
     {
         sigla: "FOB",
-        subtitulo: "Free On Board / Franco a Bordo",
-        descripcion: "El vendedor hace la entrega de la mercancía a bordo del buque, cubriendo los gastos generados en origen tales como (transporte local, aduana de exportación y manipulación de mercancía)  Asimismo, el comprador asume  todos los costos y riesgos de daño o pérdida desde ese lugar. (flete internacional, seguro, manipulacion de mercancia, aduana de importación y transporte local en destino).",
+        subtitulo: "Free On Board / Franco a bordo",
+        descripcion: "El vendedor hace la entrega de la mercancía a bordo del buque y cubre los gastos generados en origen tales como transporte local, trámites en la aduana de exportación y manipulación de la mercancía. Así mismo, el comprador asume todos los costos y riesgos de daño o pérdida desde el puerto en el país de origen hasta el lugar de destino, tales como flete internacional, seguro internacional, manipulación de la mercancía, gastos generados en la aduana de importación y transporte local en destino.",
         imagen: "images/fob.gif",
-        checklisk: `<li>FOB solo se debe utilizar en transporte por mar o vías navegables.</li>
-        <li>El vendedor debe hacer entrega de la mercancía a bordo del buque.</li>
+        checklisk: `<li>FOB solo se debe utilizar en el transporte por mar o vías navegables.</li>
+        <li>El vendedor debe hacer la entrega de la mercancía a bordo del buque.</li>
         <li>Los gastos de aduana de exportación deben ser cubiertos por el vendedor.</li>
-        <li>El comprador debe contratar a sus despensas el transporte internacional y seguro.</li>
-        <li>El vendedor transmite el riesgo una vez sea puesta la carga a bordo del buque. </li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
+        <li>El comprador debe contratar a sus despensas el transporte y seguro internacional.</li>
+        <li>El vendedor transmite el riesgo una vez sea puesta la carga a bordo del buque.</li>
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`
     },
     {
         sigla: "CFR",
-        subtitulo: "Cost and Freight / Coste y Flete",
-        descripcion: "Incoterms®️2020 utilizado únicamente para transporte por marítimo o fluvial, en este caso el vendedor asume los costos generados  hasta entregar la mercancía en puerto de destino tales como (transporte local en origen, aduana de exportación, manipulación de carga en puerto, y flete internacional), de este modo transfiere el riesgo al comprador una vez esté la mercancía en puerto de destino, de este modo el comprador asume los gastos ocasionados como (seguro, manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
+        subtitulo: "Cost and Freight / Coste y flete",
+        descripcion: "El vendedor asume los costos generados hasta entregar la mercancía en puerto de destino tales como transporte local en origen, trámites en la aduana de exportación, manipulación de carga en el puerto en origen y flete internacional. El comprador asume los gastos del seguro internacional, manipulación de carga en puerto de destino, trámites en la aduana de importación y transporte local en destino.",
         imagen: "images/cfr.gif",
-        checklisk: `<li>CFR solo se debe utilizar en transporte por mar o vías navegables.</li>
+        checklisk: `<li>CFR solo se debe utilizar en el transporte por mar o vías navegables.</li>
         <li>El vendedor entrega la mercancía a bordo del buque.</li>
         <li>El vendedor transmite el riesgo cuando entrega la carga a bordo del buque.</li>
         <li>El vendedor debe contratar el transporte hasta el puerto de destino acordado.</li>
         <li>Se recomienda al comprador asegurar la carga.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`
     },
     {
         sigla: "CIF",
-        subtitulo: "Cost, Insurance and Freight/Coste, Seguro y Flete",
-        descripcion: "Es el complemento del CFR, donde se adiciona el seguro marítimo a cargo del vendedor, en este caso el vendedor debe asumir los costos generado en origen sumando el flete internacional y el seguro, (transporte local en origen, aduana de exportación, manipulación de carga en puerto, flete internacional y seguro), el comprador asume los gastos ocasionados como (manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
+        subtitulo: "Cost, Insurance and Freight / Costo, seguro y flete",
+        descripcion: "Es el complemento del CFR, donde se adiciona el seguro marítimo a cargo del vendedor, en este caso el vendedor debe asumir los costos generado en origen tales como transporte local en origen, trámites en la aduana de exportación, manipulación de carga en puerto, flete internacional y seguro internacional. El comprador asume los gastos de manipulación de la carga en el puerto de destino, trámites en la aduana de importación y transporte local en destino.",
         imagen: "images/fob.gif",
         checklisk: `<li>CIF solo se debe utilizar en transporte por mar o vías navegables.</li>
         <li>El vendedor asume los gastos del seguro y del flete internacional de la carga.</li>
