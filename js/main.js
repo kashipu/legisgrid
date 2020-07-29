@@ -27,6 +27,7 @@ function scrollButton() {
         scrollContainer.scrollLeft = 0
     }
 }
+
 // Función para el menú responsive
 function toggle() {
     let queryX = window.matchMedia("(max-width:1110px)")
@@ -130,5 +131,7 @@ function insertInfo(i) {
         footerBox.classList.remove('none-ico');
         helpTextBox.classList.remove('none-ico');
     }
+    window.scroll(0,0)
 }
+
 insertInfo(0)
