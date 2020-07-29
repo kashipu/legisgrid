@@ -1,6 +1,6 @@
 const info = [{
         sigla: "EXW",
-        subtitulo: "Ex works / En fábrica",
+        subtitulo: "Ex Works / En fábrica",
         descripcion: "El vendedor entrega la mercancía a disposición del comprador en el lugar designado por el mismo bien sea en la fábrica, almacén o taller, entre otros. El comprador asume todos los riesgos y los costos desde el momento que recibe la mercancía hasta su destino.",
         imagen: "images/exw.gif",
         checklisk: `<li>El vendedor indica el lugar de entrega de la mercancía.</li>
@@ -13,13 +13,13 @@ const info = [{
     {
         sigla: "FCA",
         subtitulo: "Free Carrier / Franco porteador",
-        descripcion:`En este Incoterms®️2020 existen dos modalidades de entrega y riesgo de la mercancía:
+        descripcion:`En este Incoterms®️ 2020 existen dos modalidades de entrega y riesgo de la mercancía:
         <ul>
         <li>Cuando el lugar designado son las instalaciones del vendedor, la mercancía se debe cargar en los medios de transporte dispuestos por el comprador.</li>
         <li>Cuando el lugar designado es otro, se debe acordar o concretar un punto de entrega de la mercancía al transportista elegido por el comprador, en los medios de transporte del vendedor preparada para la descarga.</li>
         </ul> `,
         imagen: "images/fca.gif",
-        checklisk: `<li>Cuenta con dos condiciones de entrega</li>
+        checklisk: `<li>Cuenta con dos condiciones de entrega.</li>
         <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
         <li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>El vendedor es responsable de pérdida o daños hasta que se haya entregado al porteador o persona designada por el comprador.</li>
@@ -38,8 +38,8 @@ const info = [{
     },
     {
         sigla: "CIP",
-        subtitulo: "Carriage and Insurance Paid to / Transporte y seguro pagados hasta",
-        descripcion: "Es el complemento del Incoterms®️2020 CPT, se incluye el valor del seguro que es asumido por el vendedor. El vendedor debe asumir todos los gastos relacionados con manipulación, transporte local, trámites de exportación, transporte internacional y seguro. No obstante, la responsabilidad y el riesgo la asume el comprador desde que inicia el transporte internacional.",
+        subtitulo: "Carriage and Insurance Paid To / Transporte y seguro pagados hasta",
+        descripcion: "Es el complemento del Incoterms®️ 2020 CPT, se incluye el valor del seguro que es responsabilidad del vendedor. El vendedor debe cubrir todos los gastos relacionados con manipulación de la carga, transporte local, trámites de exportación, transporte y seguro internacional. No obstante, la responsabilidad y el riesgo la asume el comprador desde que inicia el transporte internacional.",
         imagen: "images/cip.gif",
         checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>El vendedor debe asumir el valor del transporte internacional y del seguro.</li>
@@ -59,7 +59,7 @@ const info = [{
     },
     {
         sigla: "DPU",
-        subtitulo: "Delivered at place unloaded / Mercancía entregada en el lugar y descargada",
+        subtitulo: "Delivered At Place Unloaded / Mercancía entregada en el lugar y descargada",
         descripcion: "El vendedor entrega la mercancía hasta el sitio en destino, cubre todos los gastos generados en transporte local, internacional, seguro, aduana de exportación, manipulación de carga en origen y destino, transporte en destino y descargue de la mercancía. El comprador debe cubrir los gastos generados en aduana de importación.",
         imagen: "images/dpu.gif",
         checklisk: `<li>El vendedor asume todos los gastos generados hasta la entrega de la mercancía incluyendo el descargue.</li>
@@ -82,7 +82,7 @@ const info = [{
     {
         sigla: "FAS",
         subtitulo: "Free Alongside Ship / Franco al costado del buque",
-        descripcion: "El vendedor se hace cargo de la entrega de la mercancía en el puerto de embarque y asume todos los gastos generados hasta la entrega de la mercancía en el puerto tales como transporte en origen, trámites en la aduana de exportación y manipulación de la carga hasta dejar la mercancía al costado del buque. El comprador asume el riesgo y los costos desde el cargue de la mercancía al buque. ",
+        descripcion: "El vendedor se hace cargo de la entrega de la mercancía en el puerto de embarque y asume todos los gastos generados hasta la entrega de la mercancía en el puerto, tales como transporte en origen, trámites en la aduana de exportación y manipulación de la carga hasta dejar la mercancía al costado del buque. El comprador asume el riesgo y los costos desde el cargue de la mercancía al buque.",
         imagen: "images/fas.gif",
         checklisk: `<li>FAS solo se debe utilizar en el transporte por mar o vías navegables.</li>
         <li>El vendedor entrega la mercancía al costado del buque o en el punto de carga asignado por el comprador.</li>
@@ -92,7 +92,7 @@ const info = [{
     },
     {
         sigla: "FOB",
-        subtitulo: "Free On Board / Franco a bordo",
+        subtitulo: "Free on Board / Franco a bordo",
         descripcion: "El vendedor hace la entrega de la mercancía a bordo del buque y cubre los gastos generados en origen tales como transporte local, trámites en la aduana de exportación y manipulación de la mercancía. Así mismo, el comprador asume todos los costos y riesgos de daño o pérdida desde el puerto en el país de origen hasta el lugar de destino, tales como flete internacional, seguro internacional, manipulación de la mercancía, gastos generados en la aduana de importación y transporte local en destino.",
         imagen: "images/fob.gif",
         checklisk: `<li>FOB solo se debe utilizar en el transporte por mar o vías navegables.</li>
