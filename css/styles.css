@@ -259,6 +259,16 @@ button {
     line-height: 160%;
 }
 
+
+.text-intern-inc ul {
+    list-style: disc;
+    padding-left: 2%;
+}
+
+
+
+
+
 .checklist-inc {
     margin: 1.2rem 0rem;
     border: 1px solid var(--Clightgray);
@@ -410,8 +420,9 @@ button {
     white-space: normal;
 }
 
-.scroll-title-inc-set h3 {
+.scroll-title-inc {
     padding-top: 4px;
+    text-align: center;
 }
 
 .scroll-color-box-1 {

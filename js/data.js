@@ -12,37 +12,39 @@ const info = [{
     },
     {
         sigla: "FCA",
-        subtitulo: "Free Carrier / Franco Porteador",
-        descripcion: "Se debe acordar o concretar un punto de entrega de la mercancía al transportista (transitario, naviera, aerolínea, etc.)  elegido por el comprador, el vendedor debe hacer la entrega de la mercancía una vez superada la aduana de exportación, asumiendo los gastos generado por manipulación, transporte, descargue y costos aduaneros desde el almacén o fábrica hasta el lugar o punto fijado para ello.",
+        subtitulo: "Free Carrier / Franco porteador",
+        descripcion:`En este Incoterms®️2020 existen dos modalidades de entrega y riesgo de la mercancía:
+        <ul>
+        <li>Cuando el lugar designado son las instalaciones del vendedor, la mercancía se debe cargar en los medios de transporte dispuestos por el comprador.</li>
+        <li>Cuando el lugar designado es otro, se debe acordar o concretar un punto de entrega de la mercancía al transportista elegido por el comprador, en los medios de transporte del vendedor preparada para la descarga.</li>
+        </ul> `,
         imagen: "images/fca.gif",
         checklisk: `<li>Cuenta con dos condiciones de entrega</li>
         <li>El vendedor debe entregar el producto listo para despacho, con embalaje y rotulado necesario.</li>
-        <li>El vendedor es responsable de perdida o daños hasta que se haya entregado al porteador o persona designada por el comprador.</li>
-        <li>El comprador debe contratar el transporte desde el punto designado de entrega.</li>
         <li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
+        <li>El vendedor es responsable de pérdida o daños hasta que se haya entregado al porteador o persona designada por el comprador.</li>
+        <li>El comprador debe contratar el transporte desde el punto designado de entrega.</li>
+        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`, 
     },
     {
         sigla: "CPT",
         subtitulo: "Carriage Paid To / Transporte pagado hasta",
-        descripcion: "El vendedor hace la entrega de la mercancía y asume el costo del transporte hasta un puerto o destino acordado, incluyendo todos los gastos, trámites de exportación, despacho aduanero y transporte internacional. No obstante la responsabilidad y el riesgo la asume el comprador desde que inicia el transporte internacional",
+        descripcion: "El vendedor hace la entrega de la mercancía y asume el costo del transporte hasta un puerto o destino acordado con el comprador, incluye todos los gastos, trámites de exportación y transporte internacional. No obstante, la responsabilidad y el riesgo la asume el comprador desde que inicia el transporte internacional.",
         imagen: "images/cpt.gif",
-        checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad o operaciones de recuento.</li>
+        checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
         <li>El comprador asume la responsabilidad y riesgo desde que inicia el transporte internacional.</li>
-        <li>El vendedor debe asumir los costos de despacho de aduana.</li>
-        <li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
+        <li>El vendedor debe asumir los costos de los trámites de exportación.</li>
         <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
     },
-    {
+    {® 
         sigla: "CIP",
-        subtitulo: "Carriage and Insurance Paid to / Transporte y Seguro Pagados hasta",
-        descripcion: "Es el complemento del Incoterm®  CPT, se incluye el valor del seguro que es asumido por el vendedor. El vendedor debe asumir todos los gastos relacionados con manipulación, transporte local, trámites de exportación, despacho aduanero, transporte internacional y seguro. No obstante la responsabilidad del comprador inicia al finalizar el transporte internacional.",
+        subtitulo: "Carriage and Insurance Paid to / Transporte y seguro pagados hasta",
+        descripcion: "Es el complemento del Incoterms®️2020 CPT, se incluye el valor del seguro que es asumido por el vendedor. El vendedor debe asumir todos los gastos relacionados con manipulación, transporte local, trámites de exportación, transporte internacional y seguro. No obstante, la responsabilidad y el riesgo la asume el comprador desde que inicia el transporte internacional.",
         imagen: "images/cip.gif",
         checklisk: `<li>El vendedor debe pagar los costos de verificación de calidad u operaciones de recuento.</li>
-        <li>El vendedor debe asumir el valor del seguro.</li>
-        <li>La responsabilidad la asume el comprador al finalizar el transporte internacional.</li>
-        <li>El vendedor debe asumir los gastos si se general al realizar las operaciones de verificación de calidad y conteo de la mercancía.</li>
-        <li>Se recomienda leer las notas explicativas e obligaciones de las partes.</li>`,
+        <li>El vendedor debe asumir el valor del transporte internacional y del seguro.</li>
+        <li>La responsabilidad la asume el comprador al iniciar el transporte internacional.</li>
+        <li>Se recomienda leer las notas explicativas y obligaciones de las partes.</li>`,
     },
     {
         sigla: "DAP",
@@ -106,7 +108,7 @@ const info = [{
     {
         sigla: "CFR",
         subtitulo: "Cost and Freight / Coste y Flete",
-        descripcion: "Incoterms utilizado únicamente para transporte por marítimo o fluvial, en este caso el vendedor asume los costos generados  hasta entregar la mercancía en puerto de destino tales como (transporte local en origen, aduana de exportación, manipulación de carga en puerto, y flete internacional), de este modo transfiere el riesgo al comprador una vez esté la mercancía en puerto de destino, de este modo el comprador asume los gastos ocasionados como (seguro, manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
+        descripcion: "Incoterms®️2020 utilizado únicamente para transporte por marítimo o fluvial, en este caso el vendedor asume los costos generados  hasta entregar la mercancía en puerto de destino tales como (transporte local en origen, aduana de exportación, manipulación de carga en puerto, y flete internacional), de este modo transfiere el riesgo al comprador una vez esté la mercancía en puerto de destino, de este modo el comprador asume los gastos ocasionados como (seguro, manipulación de carga en puerto de destino, aduana de importación y transporte local en destino).",
         imagen: "images/cfr.gif",
         checklisk: `<li>CFR solo se debe utilizar en transporte por mar o vías navegables.</li>
         <li>El vendedor entrega la mercancía a bordo del buque.</li>
