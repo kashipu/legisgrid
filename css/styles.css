@@ -588,6 +588,15 @@ footer {
     margin: 0 auto;
 }
 
+.small-text-inc {
+    font-style: italic;
+    font-size: .8rem;
+}
+
+#logoIncoterms {
+    padding: 2rem 4rem;
+}
+
 .text-list a {
     color: white;
     text-decoration: none;
